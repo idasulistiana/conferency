@@ -1,159 +1,81 @@
-
-	<div id="header">
-		<div class="clearfix">
-			<div class="logo">
-				<a href="index.html"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="LOGO" height="52" width="362"></a>
-			</div>
-			<ul class="navigation">
-				<li class="active">
-					<a href="<?php echo site_url() ?>home.php">Home</a>
-				</li>
-				<li>
-					<a href="<?php echo site_url() ?>about_us.php">About Us</a>
-				</li>
-				<li>
-					<a href="<?php echo site_url() ?>abstract.php">Abstract</a>
-				</li>
-				<li>
-					<a href="<?php echo site_url() ?>journals.php">Journals</a>
-				</li>
-				<li>
-					<a href="<?php echo site_url() ?>registration.php">Registration</a>
+<div id="body">
+		<div class="content">
+			<div id="section">
+				<h2>about</h2>
+				<p>
+					We Have Free Templates for Everyone. Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. <b>What’s more, they’re absolutely free! You can do a lot with them. You can modify them.</b>
+				</p>
+				<img src="images/old-couple.jpg" alt="">
+				<div class="article">
 					<div>
-						<a href="<?php echo site_url() ?>registration/speaker.php">Speakers</a>
+						<h3>We Have Free Templates for <br> Everyone</h3>
+						<p>
+							You can use them to design websites for clients, so long as you agree with the <a href="http://www.freewebsitetemplates.com/about/terms">Terms of Use</a>. You can even remove all our links if you want to.
+						</p>
+						<h3>We Have More Templates for You</h3>
+						<p>
+							Looking for more templates? Just browse through all our <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> and find what you’re looking for. But if you don’t find any website template you can use, you can try our <a href="http://www.freewebsitetemplates.com/freewebdesign/">Free Web Design</a> service and tell us all about it. Maybe you’re looking for something different, something special. And we love the challenge of doing something different and something special.
+						</p>
 					</div>
-					<div>	
-						<a href="<?php echo site_url() ?>registration/audiences.php">Audiences</a>
-					</div>
-				</li>
-				<li>
-					<a href="<?php echo site_url() ?>technical.php">Technical Program</a>
 					<div>
-						<a href="<?php echo site_url() ?>technical/call_for_abstract.php">Call For Abstract</a>
+						<h3>Be Part of Our Community</h3>
+						<p>
+							If you’re experiencing issues and concerns about this website template, join the discussion on <a href="http://www.freewebsitetemplates.com/forums/">on our forum</a> and meet other people in the community who share the same interests with you.
+						</p>
+						<h3>Template details</h3>
+						<p>
+							Design version 4
+						</p>
+						<p>
+							Code version 3
+						</p>
+						<p>
+							Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/cardiologywebsitetemplate/">Cardiology Website Template</a>.
+						</p>
+						<p>
+							Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>.
+						</p>
+						<p>
+							Please feel free to remove some or all the text and links of this page and replace it with your own About content.
+						</p>
 					</div>
-					<div>	
-						<a href="<?php echo site_url() ?>technical/brochure.php">Brochure & Contact Details</a>
-					</div>
-					<div>	
-						<a href="<?php echo site_url() ?>technical/speaker_guidelines.php">Speaker guidelines</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div id="contents">
-		<div id="adbox">
-			<div class="clearfix">
-				<img src="images/family-large.jpg" alt="Img" height="382" width="594">
-				<div class="detail">
-					<h1>It’s never easy...<br> When it comes to family.</h1>
-					<p>
-						But we can set<br> everything straight.
-					</p>
 				</div>
 			</div>
-		</div>
-		<div class="highlight">
-			<div class="clearfix">
-				<div class="testimonial">
-					<h2>Testimonials</h2>
-					<p>
-						&ldquo;Aenean ullamcorper purus vitae nisl tristique sollicitudin. Quisque vestibulum, erat ornare.&rdquo;
-					</p>
-					<span>-John Doe and Jane Doe-</span>
+			<div id="sidebar">
+				<div class="search">
+					<h3>search</h3>
+					<form action="index.html">
+						<input type="text" name="search" id="search" value="Search here...">
+						<input type="hidden" name="submit" id="submitBtn" value="">
+					</form>
 				</div>
-				<h1>The Manes Winchester Promise</h1>
-				<p>
-					This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
-				</p>
-			</div>
-		</div>
-		<div class="featured">
-			<h2>Why Choose Us?</h2>
-			<ul class="clearfix">
-				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/meeting.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
-					<p>
-						<b>Our lawyers</b> Our website templates are created with inspiration, checked for quality and originality.
-					</p>
-					<a href="index.html" class="more">Read More</a>
-				</li>
-				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/handshake.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
-					<p>
-						<b>get to know us more</b> Just browse through all our Free Website Templates and ﬁnd what you’re looking for.
-					</p>
-					<a href="index.html" class="more">Read More</a>
-				</li>
-				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/smile.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
-					<p>
-						<b>what we offer</b> Join the discussion on our forum and meet other people in the community.
-					</p>
-					<a href="index.html" class="more">Read More</a>
-				</li>
-				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/family-small.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
-					<p>
-						<b>get in touch with us</b> And we love the challenge of doing something diferent and something special.
-					</p>
-					<a href="index.html" class="more">Read More</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="clearfix">
-			<div class="section">
-				<h4>Latest News</h4>
-				<p>
-					This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link.
-				</p>
-			</div>
-			<div class="section contact">
-				<h4>Contact Us</h4>
-				<p>
-					<span>Address:</span> the address city, state 1111
-				</p>
-				<p>
-					<span>Phone:</span> (+20) 000 222 999
-				</p>
-				<p>
-					<span>Email:</span> info@freewebsitetemplates.com
-				</p>
-			</div>
-			<div class="section">
-				<h4>SEND US A MESSAGE</h4>
-				<p>
-					If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
-				</p>
-				<a href="http://www.freewebsitetemplates.com/misc/contact/" class="subscribe">Click to send us an email</a>
-			</div>
-		</div>
-		<div id="footnote">
-			<div class="clearfix">
-				<div class="connect">
-					<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook"></a><a href="http://freewebsitetemplates.com/go/twitter/" class="twitter"></a><a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus"></a><a href="http://pinterest.com/fwtemplates/" class="pinterest"></a>
+				<div class="testimonials">
+					<h3>patients' testimonials</h3>
+					<ul>
+						<li>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi. Donec felis nunc, placerat quis varius quis. In convallis pulvinar rutrum. Suspendisse nec mi lectus, at fermentum felis.
+							</p>
+							<a href="#" >-Mr.Robinson, Ohio</a>
+						</li>
+						<li>
+							<p>
+								Sed vehicula dui ac odio dictum a luctus purus aliquam. Suspendisse potenti. Integer feugiat dolor ut odio tincidunt pulvinar. Suspendisse eget mauris sapien, sed convallis purus.
+							</p>
+							<a href="#" >-John Mainstreet, Minnesota</a>
+						</li>
+						<li>
+							<p>
+								Morbi dignissim nunc sed metus faucibus venenatis. Etiam eu purus sit amet velit semper adipiscing non et est. Cras vulputate blandit nulla, ac tristique velit pellentesque et.
+							</p>
+							<a href="#" >-Jessica Greene, New York</a>
+						</li>
+					</ul>
 				</div>
-				<p>
-					© Copyright 2023 Manes Winchester. All Rights Reserved.
-				</p>
+				<div class="awards">
+					<h3>awards</h3>
+					<a href="#" class="first"><img src="images/award.jpg" alt=""></a> <a href="#"><img src="images/award2.jpg" alt=""></a>
+				</div>
 			</div>
 		</div>
 	</div>

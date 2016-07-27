@@ -1,159 +1,157 @@
-
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Our Doctors - Cardiology Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="css/ie7.css" type="text/css">
+	<![endif]-->
+</head>
+<body>
 	<div id="header">
-		<div class="clearfix">
-			<div class="logo">
-				<a href="index.html"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="LOGO" height="52" width="362"></a>
+		<div>
+			<div>
+				<span>A healthy heart means a healthy life...</span>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<span class="tagline">Experience life to the fullest.</span>
 			</div>
-			<ul class="navigation">
-				<li class="active">
-					<a href="<?php echo site_url() ?>home.php">Home</a>
+			<ul>
+				<li>
+					<a href="index.html">home</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>about_us.php">About Us</a>
+					<a href="about.html">about</a>
+				</li>
+				<li class="selected">
+					<a href="doctors.html">our doctors</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>abstract.php">Abstract</a>
+					<a href="services.html">services</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>journals.php">Journals</a>
+					<a href="forms.html">forms</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>registration.php">Registration</a>
-					<div>
-						<a href="<?php echo site_url() ?>registration/speaker.php">Speakers</a>
-					</div>
-					<div>	
-						<a href="<?php echo site_url() ?>registration/audiences.php">Audiences</a>
-					</div>
+					<a href="contact.html">contact</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>technical.php">Technical Program</a>
-					<div>
-						<a href="<?php echo site_url() ?>technical/call_for_abstract.php">Call For Abstract</a>
-					</div>
-					<div>	
-						<a href="<?php echo site_url() ?>technical/brochure.php">Brochure & Contact Details</a>
-					</div>
-					<div>	
-						<a href="<?php echo site_url() ?>technical/speaker_guidelines.php">Speaker guidelines</a>
-					</div>
+					<a href="blog.html">blog</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div id="contents">
-		<div id="adbox">
-			<div class="clearfix">
-				<img src="images/family-large.jpg" alt="Img" height="382" width="594">
-				<div class="detail">
-					<h1>It’s never easy...<br> When it comes to family.</h1>
+	<div id="body">
+		<div class="section">
+			<h2>our doctors</h2>
+			<p>
+				This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
+			</p>
+			<div>
+				<img src="images/emily.jpg" alt="">
+				<div>
+					<b><a href="#">Dr. Emily James</a></b> <small>internal medicine doctor consultant</small>
 					<p>
-						But we can set<br> everything straight.
+						Phasellus hendrerit tempor nunc vitae pulvinar. Vivamus urna eros, molestie at pretium in, pretium a metus. Aenean gravida, dolor id volutpat rutrum, dolor mauris tempus velit, sed sollicitudin libero dui non est. Suspendisse sagittis enim at justo dictum quis pretium urna facilisis..
 					</p>
+					<span><a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a><a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a><a href="#" class="linkedIn">linkedin</a><a href="http://www.freewebsitetemplates.com/misc/contact" class="email">email</a></span>
 				</div>
 			</div>
-		</div>
-		<div class="highlight">
-			<div class="clearfix">
-				<div class="testimonial">
-					<h2>Testimonials</h2>
-					<p>
-						&ldquo;Aenean ullamcorper purus vitae nisl tristique sollicitudin. Quisque vestibulum, erat ornare.&rdquo;
-					</p>
-					<span>-John Doe and Jane Doe-</span>
-				</div>
-				<h1>The Manes Winchester Promise</h1>
-				<p>
-					This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
-				</p>
-			</div>
-		</div>
-		<div class="featured">
-			<h2>Why Choose Us?</h2>
-			<ul class="clearfix">
+			<ul class="article">
 				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/meeting.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
+					<img src="images/frank.jpg" alt=""> <b><a href="#">Dr. Frank Criffmont</a></b> <small>cadiologist</small>
 					<p>
-						<b>Our lawyers</b> Our website templates are created with inspiration, checked for quality and originality.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi. Donec felis nunc, placerat quis varius quis, posuere sed velit. In convallis pulvinar rutrum. Suspendisse nec mi lectus, at fermentum felis.
 					</p>
-					<a href="index.html" class="more">Read More</a>
+					<span><a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a><a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a><a href="#" class="linkedIn">linkedin</a><a href="http://www.freewebsitetemplates.com/misc/contact" class="email">email</a></span>
 				</li>
 				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/handshake.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
+					<img src="images/jefferson.jpg" alt=""> <b><a href="#">Dr. Jefferson Pinler</a></b> <small>cadiologist</small>
 					<p>
-						<b>get to know us more</b> Just browse through all our Free Website Templates and ﬁnd what you’re looking for.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi. Donec felis nunc, placerat quis varius quis, posuere sed velit. In convallis pulvinar rutrum. Suspendisse nec mi lectus, at fermentum felis.
 					</p>
-					<a href="index.html" class="more">Read More</a>
+					<span><a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a><a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a><a href="#" class="linkedIn">linkedin</a><a href="http://www.freewebsitetemplates.com/misc/contact" class="email">email</a></span>
 				</li>
 				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/smile.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
+					<img src="images/harrison.jpg" alt=""> <b><a href="#">Dr. Harrison Camer</a></b> <small>cadiologist</small>
 					<p>
-						<b>what we offer</b> Join the discussion on our forum and meet other people in the community.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi. Donec felis nunc, placerat quis varius quis, posuere sed velit. In convallis pulvinar rutrum. Suspendisse nec mi lectus, at fermentum felis.
 					</p>
-					<a href="index.html" class="more">Read More</a>
+					<span><a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a><a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a><a href="#" class="linkedIn">linkedin</a><a href="http://www.freewebsitetemplates.com/misc/contact" class="email">email</a></span>
 				</li>
 				<li>
-					<div class="frame1">
-						<div class="box">
-							<img src="images/family-small.jpg" alt="Img" height="130" width="197">
-						</div>
-					</div>
+					<img src="images/garry.jpg" alt=""> <b><a href="#">Dr. Gary Folding</a></b> <small>cadiologist</small>
 					<p>
-						<b>get in touch with us</b> And we love the challenge of doing something diferent and something special.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi. Donec felis nunc, placerat quis varius quis, posuere sed velit. In convallis pulvinar rutrum. Suspendisse nec mi lectus, at fermentum felis.
 					</p>
-					<a href="index.html" class="more">Read More</a>
+					<span><a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a><a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a><a href="#" class="linkedIn">linkedin</a><a href="http://www.freewebsitetemplates.com/misc/contact" class="email">email</a></span>
+				</li>
+			</ul>
+			<h2>our nurses</h2>
+			<ul>
+				<li>
+					<a href="#"><img src="images/linda.jpg" alt="">Linda <span>Freedom</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/jack.jpg" alt="">jack <span>harrt</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/felia.jpg" alt="">felia <span>morse</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/orlando.jpg" alt="">orlando <span>marinlake</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/ginna.jpg" alt="">ginna <span>kellyfirn</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/rosemary.jpg" alt="">rosemary <span>jenkins</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/kyle.jpg" alt="">kyle <span>gregory</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/bruce.jpg" alt="">bruce <span>limestone</span></a>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div id="footer">
-		<div class="clearfix">
-			<div class="section">
-				<h4>Latest News</h4>
-				<p>
-					This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link.
-				</p>
-			</div>
-			<div class="section contact">
-				<h4>Contact Us</h4>
-				<p>
-					<span>Address:</span> the address city, state 1111
-				</p>
-				<p>
-					<span>Phone:</span> (+20) 000 222 999
-				</p>
-				<p>
-					<span>Email:</span> info@freewebsitetemplates.com
-				</p>
-			</div>
-			<div class="section">
-				<h4>SEND US A MESSAGE</h4>
-				<p>
-					If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
-				</p>
-				<a href="http://www.freewebsitetemplates.com/misc/contact/" class="subscribe">Click to send us an email</a>
-			</div>
-		</div>
-		<div id="footnote">
-			<div class="clearfix">
-				<div class="connect">
-					<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook"></a><a href="http://freewebsitetemplates.com/go/twitter/" class="twitter"></a><a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus"></a><a href="http://pinterest.com/fwtemplates/" class="pinterest"></a>
-				</div>
-				<p>
-					© Copyright 2023 Manes Winchester. All Rights Reserved.
-				</p>
+		<div>
+			<p>
+				Copyright &copy; <a href="index.html">Cardio Center</a>
+			</p>
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li>
+					<a href="doctors.html">our doctors</a>
+				</li>
+				<li>
+					<a href="services.html">services</a>
+				</li>
+				<li>
+					<a href="forms.html">forms</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+				<li>
+					<a href="blog.html">blog</a>
+				</li>
+			</ul>
+			<div>
+				<span>stay connected:</span>
+				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
 			</div>
 		</div>
 	</div>
+</body>
+</html>
