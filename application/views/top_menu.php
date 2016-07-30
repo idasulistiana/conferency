@@ -1,11 +1,24 @@
 <div id="header">
 		<div class="header_body">
-			<div class="btn_register">
-				<span></span>
-				<!-- <a href="index.html" class="logo"><img src="<?php echo base_url() ;?>/assets/images/logo.png" alt=""></a> -->
-				<button type="button" class="btn btn-info">Organization Commitee</button>
-				<button type="button" class="btn btn-danger">Submit Abstract</button>
-				<button type="button" class="btn btn-success">Register Now</button>
+			<div class="col-sm-12 ">
+			<div class="col-sm-8">
+				<div class="body_btn_register">
+					<!-- <a href="index.html" class="logo"><img src="<?php echo base_url() ;?>/assets/images/logo.png" alt=""></a> -->
+					<button type="button" class="btn btn-info">Organization Commitee</button>
+					<button type="button" class="btn btn-danger">Submit Abstract</button>
+					<button type="button" class="btn btn-success">Register Now</button>
+				</div>
+			</div>
+			<div class="col-sm-3 form-group">
+				<div class="search_input">
+					<input type="text" class="form-control" placeholder="search">
+				</div>
+			</div>
+			<div class="col-sm-1">
+				<div class="btn_search">
+					<button type="button" class="btn btn-info"> Search</button>
+				</div>
+			</div>
 			</div>
 			<ul>
 				<li class="active">
@@ -54,3 +67,4 @@
 				</li>
 			</ul>
 		</div>
+</div>
