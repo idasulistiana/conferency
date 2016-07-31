@@ -1,15 +1,29 @@
 <div id="header">
 		<div class="header_body">
 			<?php if($this->session->userdata('status') == ""){ ?>
-			<div class="btn_register">
-				<span></span>
+			<div class="col-sm-12 ">
+			<div class="col-sm-8">
+				<div class="body_btn_register">
 				<!-- <a href="index.html" class="logo"><img src="<?php echo base_url() ;?>/assets/images/logo.png" alt=""></a> -->
 				<button type="button" class="btn btn-info">Organization Commitee</button>
 				<a href="<?php echo site_url('Registration') ?>" class="btn btn-danger" title="Register as Speaker">Submit Abstract</a>
 				<a href="<?php echo site_url('Registration/participant') ?>" class="btn btn-success" title="Register as Participant">Register Now</a>
 				<a href="<?php echo site_url('Login') ?>" class="btn btn-warning" title="Login">&emsp;Login&emsp;</a>
+			
 			</div>
-			<?php } ?>
+			</div>
+			<div class="col-sm-3 form-group">
+				<div class="search_input">
+					<input type="text" class="form-control" placeholder="search">
+				</div>
+			</div>
+			<div class="col-sm-1">
+				<div class="btn_search">
+					<button type="button" class="btn btn-info"> Search</button>
+				</div>
+			</div></div>
+			<?php }else echo '<br><br><div class="clearfix"></div>'; ?>
+			<div class="clearfix"></div>
 			<ul>
 				<?php if($this->session->userdata('status') == ""){ ?>
 				<li class="active">

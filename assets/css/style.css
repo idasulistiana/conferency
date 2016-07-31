@@ -342,7 +342,7 @@ body {
 	color: #333;
 }
 #body .content {
-	background: #fff url(../images/bg-sidebar.gif) repeat-y top right;
+	/*background: #fff url(../images/bg-sidebar.gif) repeat-y top right;*/
 	border: 1px solid #cdcdcd;
 	border-radius: 6px;
 	margin: 0 auto;
@@ -354,7 +354,18 @@ body {
 	float: left;
 	margin: 0;
 	padding: 37px 29px 29px;
-	width: 570px;
+	/*width: 570px;*/
+}
+#body .content .note{
+	color:red;
+}
+#body .content .mark_title{
+	float:right;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+#body .content .form_abstract{
+	padding-bottom: 15px;
 }
 #body h2 {
 	color: #ef414a;
