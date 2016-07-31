@@ -8,6 +8,7 @@
 	<div><i>* Marked field are required</i></div>
 	<div class="form-group">
 		<label class="col-md-4">Title*</label>
+		<div class="col-md-8">
 		<select name="title" class="form-control" required>
 			<option value="">Select Title</option>
 			<option value="Mr">Mr</option>
@@ -18,6 +19,7 @@
 			<option value="Assist Prof Dr">Assist Prof Dr</option>
 			<option value="Assoc Prof Dr">Assoc Prof Dr</option>
 		</select>
+		</div>
 	</div>
 	<div class="form-group">
 	    <label for="inputFirstName" class="col-md-4">Full Name</label>
@@ -338,8 +340,8 @@
 			<input type="password" name="pass" required class="form-control">
 		</div>
 	</div>
-	<div class="form-group">
-		<button type="submit" class="btn">Submit</button>
+	<div class="form-group pull-right" style="margin: 10px 20px;">
+		<button type="submit" class="btn btn-primary">Submit</button>
 	</div>
 	</form>
 	</div>

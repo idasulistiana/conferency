@@ -1,3 +1,5 @@
+<div id="body">
+	<div class="content">
 <form action="<?php echo site_url('Registration/regis/participant') ?>" method="POST">
 <?php if($this->session->flashdata('user_error')) { ?>
     <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;Username has been taken</div>
@@ -5,6 +7,7 @@
 <div><i>* Marked field are required</i></div>
 <div class="form-group">
 	<label class="col-md-4">Title*</label>
+	<div class="col-md-8">
 	<select name="title" class="form-control" required>
 		<option value="">Select Title</option>
 		<option value="Mr">Mr</option>
@@ -15,6 +18,7 @@
 		<option value="Assist Prof Dr">Assist Prof Dr</option>
 		<option value="Assoc Prof Dr">Assoc Prof Dr</option>
 	</select>
+	</div>
 </div>
 <div class="form-group">
     <label for="inputFirstName" class="col-md-4">Full Name</label>
@@ -323,7 +327,9 @@
 		<input type="password" name="pass" required class="form-control">
 	</div>
 </div>
-<div class="form-group">
-	<button type="submit" class="btn">Submit</button>
+<div class="form-group pull-right" style="margin: 10px 20px;">
+	<button type="submit" class="btn btn-primary">Submit</button>
 </div>
 </form>
+</div>
+</div>
