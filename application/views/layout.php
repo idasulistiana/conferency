@@ -39,6 +39,7 @@
 
 
 			?>
+			
 		<?php $this->load->view('bottom_menu') ;?>
 	</body>
 	<footer>

@@ -70,13 +70,16 @@
 	margin: 0;
 	padding: 0;
 }
-#header ul {
+#header .line_top_menu {
 	background: url(../images/bg-navigation.gif) repeat-x bottom left;
 	/*margin-top:64px;*/
 	padding: 28px 0 0;
 	text-align: center;
-	width: 960px}
-
+	width: 960px
+}
+ .menu-register{
+	position: relative;
+}
 #header ul li {
 	display: inline-block;
 	list-style: none;
@@ -932,10 +935,22 @@
 }
 #body #content #section {
 	float: left;
-	margin: 0;
+	margin: 30px;
 	padding: 37px 29px;
 	width: 570px;
 }
+/*#body #content .section_hospitality {
+	float: left;
+    margin-left: 30;
+    padding: 37px 29px;
+    width: 634px;
+}
+#body #content .section_hospitality  p {
+	font-size: 13px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+}*/
 #body #content #section h2 {
 	margin: 0;
 	padding: 0 0 17px;
@@ -977,6 +992,7 @@
 	float: left;
 	border: 0;
 	display: block;
+	margin-top: 30px;
 }
 #body #content #section ul li div {
 	border-left: 1px solid #cdcdcd;
@@ -1616,3 +1632,4 @@
 	background-position: -33px -32px;
 	width: 26px;
 }*/
+/*=================veneu and hospitality===============*/

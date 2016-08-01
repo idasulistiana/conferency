@@ -23,7 +23,7 @@
 			</div> -->
 			<?php }else echo '<br><br><div class="clearfix"></div>'; ?>
 			<div class="clearfix"></div>
-			<ul>
+			<ul class="line_top_menu">
 				<?php if($this->session->userdata('status') == ""){ ?>
 				<li class="active">
 					<a href="<?php echo site_url('Home') ?>">Home</a>
@@ -35,11 +35,11 @@
 					<a href="<?php echo site_url('Abstract_web') ?>">Abstract</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>journals.php">Journals</a>
+					<a href="<?php echo site_url() ?>journals">Journals</a>
 				</li>
-				<li class="dropdown">
+				<li class="dropdown register">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo site_url('registration') ?>">Registration</a>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu menu-register">
 							<li>
 								<a href="<?php echo site_url() ?>registration/">Speakers</a>
 							</li>
@@ -85,5 +85,6 @@
 				</li>
 				<?php } ?>
 			</ul>
+		</div>
 		</div>
 		</div>
