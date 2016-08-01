@@ -5,7 +5,8 @@
 				<img src="<?php echo base_url() ;?>/assets/images/biking.jpg" alt="">
 				<ul>
 					<p>
-					Meet Inspiring Speakers and Experts at our <span class="font_red"> 3000+ </span> Global <span class="font_red"> <a href="">Conferenceseries</a></span> Events with over 600+ Conferences, 1200+ Symposiums and 1200+ Workshops on <span class="font_red">  Medical, Pharma, Engineering, Science, Technology and Business.</span> 
+					Meet Inspiring Speakers and Experts at our <span class="font_red"> 3000+ </span> Global  <span class="font_red">  <a href="">Conferenceseries</a></span> Events with over 600+ Conferences, 1200+ Symposiums and 1200+ Workshops on 
+					<span class="font_red">  Medical, Pharma, Engineering, Science, Technology and Business.</span> 
 					Explore and learn more about <span class="font_red"><a href="">Conference Series LLC</a></span>: World’s leading Event Organizer
 					</p>
 				</ul>
