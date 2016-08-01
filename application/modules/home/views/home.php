@@ -1,6 +1,6 @@
 
 	<div id="body">
-		<div class="header">
+		<div class="col-sm-12 header">
 			<div>
 				<img src="<?php echo base_url() ;?>/assets/images/biking.jpg" alt="">
 				<ul>

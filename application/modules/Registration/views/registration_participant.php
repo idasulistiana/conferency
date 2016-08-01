@@ -1,6 +1,6 @@
 <div id="body">
 	<div class="content">
-		<form action="<?php echo site_url('Registration/regis/speaker') ?>" method="POST">
+		<form action="<?php echo site_url('Registration/regis/participant') ?>" method="POST">
 		<?php if($this->session->flashdata('user_error')) { ?>
 		    <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;Username has been taken</div>
 		<?php } ?>
