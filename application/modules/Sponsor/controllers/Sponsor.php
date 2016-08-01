@@ -1,6 +1,6 @@
 <?php
 
-class Venue_hospitally extends CI_Controller {
+class Sponsor extends CI_Controller {
 
 	function __construct(){
         // Call the Model constructor
@@ -9,7 +9,7 @@ class Venue_hospitally extends CI_Controller {
     }
 	function index()
 	{	
-		$data['content_view']='venue_hospitally';
+		$data['content_view']='sponsor';
 		$this->load->view('layout',$data);
 	}
 }

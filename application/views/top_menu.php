@@ -50,7 +50,7 @@
 						</ul>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>technical.php">Technical Program</a>
+					<a href="<?php echo site_url() ?>technical_program">Technical Program</a>
 					<!-- <div> -->
 		<!-- 				<a href="<?php echo site_url() ?>technical/call_for_abstract.php">Call For Abstract</a>
 					</div>
@@ -65,10 +65,10 @@
 					<a href="<?php echo site_url() ?>venue_hospitally">Venue & Hospitality</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>awards.php">Awards</a>
+					<a href="<?php echo site_url() ?>awards">Awards</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url() ?>sponsor.php">Sponsor</a>
+					<a href="<?php echo site_url() ?>sponsor">Sponsor</a>
 				</li>
 				<?php }else{ if($this->session->userdata('status') == 2){ ?>
 				<li>
