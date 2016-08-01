@@ -2,7 +2,7 @@
 	<div id="body">
 		<div class="col-sm-12 header">
 			<div>
-				<img src="<?php echo base_url() ;?>/assets/images/biking.jpg" alt="">
+				<img src="<?php echo base_url() ;?>/assets/images/banner.png" alt="">
 				<ul>
 					<p>
 					Meet Inspiring Speakers and Experts at our <span class="font_red"> 3000+ </span> Global  <span class="font_red">  <a href="">Conferenceseries</a></span> Events with over 600+ Conferences, 1200+ Symposiums and 1200+ Workshops on 

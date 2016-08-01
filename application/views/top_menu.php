@@ -5,7 +5,7 @@
 			<div class="col-sm-8">
 				<div class="body_btn_register">
 				<!-- <a href="index.html" class="logo"><img src="<?php echo base_url() ;?>/assets/images/logo.png" alt=""></a> -->
-				<button type="button" class="btn btn-info">Organization Commitee</button>
+				<!-- <button type="button" class="btn btn-info">Organization Commitee</button> -->
 				<a href="<?php echo site_url('Registration') ?>" class="btn btn-danger" title="Register as Speaker">Submit Abstract</a>
 				<a href="<?php echo site_url('Registration/participant') ?>" class="btn btn-success" title="Register as Participant">Register Now</a>
 				<a href="<?php echo site_url('Login') ?>" class="btn btn-warning" title="Login">&emsp;Login&emsp;</a>
@@ -37,7 +37,7 @@
 				<li>
 					<a href="<?php echo site_url() ?>journals">Journals</a>
 				</li>
-				<li class="dropdown register">
+				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo site_url('registration') ?>">Registration</a>
 						<ul class="dropdown-menu menu-register">
 							<li>
