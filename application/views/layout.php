@@ -22,7 +22,7 @@
 					$this->load->view('sponsor');
 				}else if ($content_view=='technical_program'){
 					$this->load->view('technical_program');
-				}}else if ($content_view=='registration_participant'){
+				}else if ($content_view=='registration_participant'){
 					$this->load->view('registration_participant');
 				}else if ($content_view=='login'){
 					$this->load->view('login');
