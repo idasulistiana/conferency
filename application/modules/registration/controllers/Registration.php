@@ -43,7 +43,7 @@ class Registration extends CI_Controller {
 			}else{
 				$this->Registration_m->regis_pt();
 			}
-			redirect(site_url());
+			redirect(site_url('Login'));
 		}
 	}
 }

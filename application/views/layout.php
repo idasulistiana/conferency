@@ -27,6 +27,8 @@
 					$this->load->view('abstract_speaker', $data);
 				}else if ($content_view=='cabs_speaker'){
 					$this->load->view('cabs_speaker');
+				}else if ($content_view=='home_audience'){
+					$this->load->view('home_audience');
 				}
 			?>
 		<?php $this->load->view('bottom_menu') ;?>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2016 at 11:12 AM
+-- Generation Time: Aug 01, 2016 at 02:21 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -39,6 +39,28 @@ CREATE TABLE IF NOT EXISTS `tbl_participant` (
   `phone` varchar(20) NOT NULL,
   `address` text NOT NULL,
   `username` varchar(30) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_participant`
+--
+
+INSERT INTO `tbl_participant` (`id_participant`, `title`, `fname`, `lname`, `company`, `city`, `state`, `country`, `email`, `phone`, `address`, `username`) VALUES
+(1, 'Ms', 'Nastiti', 'Arum', 'Bogor Agricultural University', 'Bogor', 'West Java', 'Indonesia', 'nastitiarum@yahoo.com', '0898902883', '', 'nastiti');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_rundown`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_rundown` (
+  `id_ev` int(11) NOT NULL,
+  `date_ev` date NOT NULL,
+  `stime` time NOT NULL,
+  `etime` time NOT NULL,
+  `event` varchar(100) NOT NULL,
+  `id_speaker` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -61,15 +83,17 @@ CREATE TABLE IF NOT EXISTS `tbl_speaker` (
   `address` text NOT NULL,
   `abstract_category` varchar(30) NOT NULL,
   `title_speech` varchar(50) NOT NULL,
-  `username` varchar(30) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `username` varchar(30) NOT NULL,
+  `abstract_file` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_speaker`
 --
 
-INSERT INTO `tbl_speaker` (`id_speaker`, `title`, `fname`, `lname`, `company`, `city`, `state`, `country`, `email`, `phone`, `address`, `abstract_category`, `title_speech`, `username`) VALUES
-(1, 'Ms', 'Ida', 'Sulistiana', 'IPB', 'Bogor', 'West Java', 'Select country', 'omscbx@lala', '08937492', 'lorem ipsum', '', '', 'idaa');
+INSERT INTO `tbl_speaker` (`id_speaker`, `title`, `fname`, `lname`, `company`, `city`, `state`, `country`, `email`, `phone`, `address`, `abstract_category`, `title_speech`, `username`, `abstract_file`) VALUES
+(1, 'Ms', 'Ida', 'Sulistiana', 'IPB', 'Bogor', 'West Java', 'Select country', 'omscbx@lala', '08937492', 'lorem ipsum', '', '', 'idaa', 'Kuliah_Statistika_Lanjut.pdf'),
+(2, 'Ms', 'Sulistiana', 'Ida', 'Bogor Agricultural University', 'Depok', 'West Java', 'Indonesia', 'operator@mail.com', '0898902883', '', 'Informatics', '', 'idasulis', '');
 
 -- --------------------------------------------------------
 
@@ -89,7 +113,9 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`username`, `password`, `status`, `ket`) VALUES
-('idaa', '81dc9bdb52d04dc20036dbd8313ed055', 2, 2);
+('idaa', '801cbb75ec525fe88129a531ca57b69e', 2, 2),
+('idasulis', '81dc9bdb52d04dc20036dbd8313ed055', 2, 2),
+('nastiti', '81dc9bdb52d04dc20036dbd8313ed055', 3, 2);
 
 --
 -- Indexes for dumped tables
@@ -100,6 +126,12 @@ INSERT INTO `tbl_user` (`username`, `password`, `status`, `ket`) VALUES
 --
 ALTER TABLE `tbl_participant`
   ADD PRIMARY KEY (`id_participant`);
+
+--
+-- Indexes for table `tbl_rundown`
+--
+ALTER TABLE `tbl_rundown`
+  ADD PRIMARY KEY (`id_ev`), ADD KEY `id_speaker` (`id_speaker`);
 
 --
 -- Indexes for table `tbl_speaker`
@@ -121,12 +153,27 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_participant`
 --
 ALTER TABLE `tbl_participant`
-  MODIFY `id_participant` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_participant` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_rundown`
+--
+ALTER TABLE `tbl_rundown`
+  MODIFY `id_ev` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_speaker`
 --
 ALTER TABLE `tbl_speaker`
-  MODIFY `id_speaker` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id_speaker` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_rundown`
+--
+ALTER TABLE `tbl_rundown`
+ADD CONSTRAINT `tbl_rundown_ibfk_1` FOREIGN KEY (`id_speaker`) REFERENCES `tbl_speaker` (`id_speaker`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -364,26 +364,6 @@
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="inputAbsCategory" >Abstract Category</label>
-					</div>
-					<div class="col-sm-8">
-						<input type="text" class="form-control" name="category" id="category" placeholder="Your Abstract Category">
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label for="titleSpeech" >Title of the speech</label>
-					</div>
-					<div class="col-sm-8">
-						<input type="text" class="form-control" name="ctitle" id="ctitle" placeholder="Your title of the proposed talk">
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
 						<label>Username <span class="note">*</span></label>
 					</div>
 					<div class="col-sm-5">

@@ -82,7 +82,7 @@
 				'address' => $this->getAddress(),
 				'username' => $this->getUsername()
 			);
-			$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 2, 'ket' => 2);
+			$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 3, 'ket' => 2);
 			$this->db->insert('tbl_user', $data1);
 			return $this->db->insert('tbl_participant', $data);
 		}
