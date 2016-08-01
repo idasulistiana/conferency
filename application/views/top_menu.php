@@ -9,19 +9,18 @@
 				<a href="<?php echo site_url('Registration') ?>" class="btn btn-danger" title="Register as Speaker">Submit Abstract</a>
 				<a href="<?php echo site_url('Registration/participant') ?>" class="btn btn-success" title="Register as Participant">Register Now</a>
 				<a href="<?php echo site_url('Login') ?>" class="btn btn-warning" title="Login">&emsp;Login&emsp;</a>
-			
 			</div>
 			</div>
-			<div class="col-sm-3 form-group">
+<!-- 			<div class="col-sm-3 form-group">
 				<div class="search_input">
 					<input type="text" class="form-control" placeholder="search">
 				</div>
-			</div>
-			<div class="col-sm-1">
+			</div> -->
+<!-- 			<div class="col-sm-1">
 				<div class="btn_search">
 					<button type="button" class="btn btn-info"> Search</button>
 				</div>
-			</div></div>
+			</div> -->
 			<?php }else echo '<br><br><div class="clearfix"></div>'; ?>
 			<div class="clearfix"></div>
 			<ul>
