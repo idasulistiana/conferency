@@ -24,7 +24,7 @@
 	src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot');
 	src: url('../fonts/OpenSans-Bold/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.svg') format('svg');
 }
-body {
+#body {
 	background: #f2f2f2;
 	color: #797979;
 	font-family: 'OpenSans-Light';
@@ -34,8 +34,10 @@ body {
 	min-width: 960px;
 	padding: 0;
 }
+
 #header {
 	/*background: url(../images/bg-header.jpg) no-repeat top center;*/
+	background-color:#f2f2f2;
 	margin: 0;
 	padding: 0;
 }
@@ -365,6 +367,7 @@ body {
 }
 #body .content {
 	/*background: #fff url(../images/bg-sidebar.gif) repeat-y top right;*/
+	background-color: #fff;
 	border: 1px solid #cdcdcd;
 	border-radius: 6px;
 	margin: 0 auto;
@@ -1126,9 +1129,19 @@ body {
 	overflow: hidden;
 	width: 878px;
 }
+
+#body > .section > .border {
+	border: 1px solid #cdcdcd;
+	border-radius: 6px;
+	margin-bottom: 15px;
+	padding: 0;
+	overflow: hidden;
+	width: 878px;
+}
 #body > .section > div img {
 	display: block;
 	float: left;
+	padding:20px;
 }
 #body > .section > div > div {
 	float: right;
@@ -1217,6 +1230,14 @@ body {
 	text-align: center;
 	width: 79px;
 }
+#body > .section > ul .sponsore {
+	float: left;
+	list-style: none;
+	margin: 0 45px;
+	padding: 0;
+	text-align: center;
+	width: 79px;
+}
 #body > .section > ul li > a {
 	color: #797979;
 	font-family: 'OpenSans-Bold';
@@ -1258,9 +1279,10 @@ body {
 	display: block;
 	margin: 0 0 10px;
 }
+
 #body .section ul.article li b {
 	display: block;
-	font-family: 'Arapey';
+	font-family: 'OpenSans-Light';
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
@@ -1290,6 +1312,21 @@ body {
 }
 #body .section ul.article li span {
 	padding: 7px 0 0 19px;
+}
+#body .section ul.sponsore_img li img {
+	/*border-bottom: 1px solid #cdcdcd;*/
+	display: block;
+	margin: 0 0 10px;
+}
+#body .section ul.sponsore_img li {
+	/*border: 1px solid #cdcdcd;*/
+	border-radius: 6px;
+	float: left;
+	list-style: none;
+	margin: 0 14px 0 13px;
+	padding: 0 0 22px;
+	text-align: left;
+	width: 198px;
 }
 #body .content #sidebar {
 	float: right;

@@ -15,7 +15,15 @@
 					$this->load->view('registration_speaker');
 				}else if ($content_view=='venue_hospitally'){
 					$this->load->view('venue_hospitally');
+				}else if ($content_view=='awards'){
+					$this->load->view('awards');
+				}else if ($content_view=='sponsor'){
+					$this->load->view('sponsor');
+				}else if ($content_view=='technical_program'){
+					$this->load->view('technical_program');
 				}
+
+
 			?>
 		<?php $this->load->view('bottom_menu') ;?>
 	</body>
