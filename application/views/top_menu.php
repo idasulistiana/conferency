@@ -6,9 +6,9 @@
 				<div class="body_btn_register">
 				<!-- <a href="index.html" class="logo"><img src="<?php echo base_url() ;?>/assets/images/logo.png" alt=""></a> -->
 				<!-- <button type="button" class="btn btn-info">Organization Commitee</button> -->
-				<a href="<?php echo site_url('Registration') ?>" class="btn btn-danger" title="Register as Speaker">Submit Abstract</a>
-				<a href="<?php echo site_url('Registration/participant') ?>" class="btn btn-success" title="Register as Participant">Register Now</a>
-				<a href="<?php echo site_url('Login') ?>" class="btn btn-warning" title="Login">&emsp;Login&emsp;</a>
+				<!-- <a href="<?php //echo site_url('Registration') ?>" class="btn btn-danger" title="Register as Speaker">Submit Abstract</a>
+				<a href="<?php// echo site_url('Registration/participant') ?>" class="btn btn-success" title="Register as Participant">Register Now</a>
+				<a href="<?php// echo site_url('Login') ?>" class="btn btn-warning" title="Login">&emsp;Login&emsp;</a> -->
 			</div>
 			</div>
 <!-- 			<div class="col-sm-3 form-group">
@@ -38,15 +38,15 @@
 					<a href="<?php echo site_url() ?>journals">Journals</a>
 				</li>
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo site_url('registration') ?>">Registration</a>
-						<ul class="dropdown-menu menu-register">
+					<a  href="<?php echo site_url('registration/participant') ?>">Registration</a>
+						<!-- <ul class="dropdown-menu menu-register">
 							<li>
 								<a href="<?php echo site_url() ?>registration/">Speakers</a>
 							</li>
 							<li>	
 								<a href="<?php echo site_url() ?>registration/participant">Participants</a>
 							</li>
-						</ul>
+						</ul> -->
 				</li>
 				<li>
 					<a href="<?php echo site_url() ?>technical_program">Technical Program</a>

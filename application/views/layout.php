@@ -24,8 +24,6 @@
 					$this->load->view('technical_program');
 				}else if ($content_view=='registration_participant'){
 					$this->load->view('registration_participant');
-				}else if ($content_view=='login'){
-					$this->load->view('login');
 				}else if ($content_view=='home_speaker'){
 					$this->load->view('home_speaker');
 				}else if ($content_view=='abstract_speaker'){

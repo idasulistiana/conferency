@@ -11,8 +11,8 @@ class Login extends CI_Controller {
     }
 
 	public function index(){
-		$data['content_view']='login';
-		$this->load->view('layout',$data);
+		
+		$this->load->view('login');
 	}
 	public function plogin(){
 		$this->Login_m->setUsername($this->input->post('user'));
