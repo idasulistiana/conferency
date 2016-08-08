@@ -1,9 +1,13 @@
 <div id="body">
 	<div class="content">
-		<form action="<?php echo site_url('Registration/regis/speaker') ?>" method="POST">
-		<?php if($this->session->flashdata('user_error')) { ?>
-		    <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;Username has been taken</div>
-		<?php } ?>
+		<h2 align="center"><br>Submit Your Abstract</h2>
+	<?php if($this->session->flashdata('error')){ ?>
+			<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;<?php echo $this->session->flashdata('error'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+	<?php } ?>
+	<?php if($this->session->flashdata('sukses')){ ?>
+			<div class="alert alert-success" role="alert"><span class="sr-only">Success:</span>&nbsp;<?php echo $this->session->flashdata('sukses'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+	<?php } ?>
+	<form action="<?php echo site_url('Registration/regis/speaker') ?>" method="POST" enctype="multipart/form-data">
 			<div class="col-sm-12 ">
 				<div class="mark_title">
 					<span class="note">* </span> Marked field are required
@@ -42,6 +46,38 @@
 				    </div>
 				</div>
 			</div>
+			<div class="col-sm-12 form_abstract">
+				<div class="form-group">
+					<div class="col-sm-4">
+						<label for="inputLastName">Company Name</label>
+				    </div>
+				    <div class="col-sm-8">
+				    	<input type="text" class="form-control" name="company" id="company" placeholder="Company/University Name" required>
+				    </div>
+				 </div>
+			</div>
+			<div class="col-sm-12 form_abstract">
+				 <div class="form-group">
+				 	<div class="col-sm-4">
+				 		<label for="inputLastName">City</label>
+				    </div>
+				    <div class="col-sm-5">
+				    	<input type="text" class="form-control" name="city" id="city" placeholder="City" required>
+				    </div>
+				 </div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-12 form_abstract">
+				<div class="form-group">
+					<div class="col-sm-4">
+				 		<label for="inputLastName">State</label>
+				   	</div>
+				    <div class="col-sm-5">
+				    	<input type="text" class="form-control" name="state" id="state" placeholder="State" required>
+				    </div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4">
@@ -300,7 +336,7 @@
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="inputEmail" >Author's Email <span class="note">*</span></label>
+						<label for="inputEmail" >Email <span class="note">*</span></label>
 					</div>
 					<div class="col-sm-5">
 						<input type="email" class="form-control" name="email" id="email" placeholder="Your email" required>
@@ -318,39 +354,11 @@
 					</div>
 				</div>
 			</div>
+			<div class="clearfix"></div>
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="inputAbsCategory" >Abstract Category</label>
-					</div>
-					<div class="col-sm-5">
-						<select class="form-control" name="country" id="abstract_catogory" required>
-							<option selected >Select Abstract Category</option>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label for="inputAbsCategory" >Track Name</label>
-					</div>
-					<div class="col-sm-5">
-						<select class="form-control" name="country" id="track_name" required>
-							<option selected value="">Select Track Name</option>
-							<option value="">2</option>
-							<option value="">3</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label for="address" >Full Postal Address</label>
+						<label for="address" >Address</label>
 					</div>
 					<div class="col-sm-8">
 						<textarea name="address" rows="3" class="form-control" id="address" maxlength="150"></textarea>
@@ -360,10 +368,38 @@
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label>Attach Your File <span class="note">*</span></label>
+						<label for="category" >Abstract Category  <span class="note">*</span></label>
+					</div>
+					<div class="col-sm-8">
+						<select class="form-control" name="category" id="category" required>
+							<option value="Technology of Biomass">Technology of Biomass</option>
+							<option value="Application of Biomass">Application of Biomass</option>
+							<option value="Sustainability of Biomass">Sustainability of Biomass</option>
+							<option value="Environment of Biomass">Environment of Biomass</option>
+							<option value="SCM of Biomass">SCM of Biomass</option>
+							<option value="Application of ICT for Biomass">Application of ICT for Biomass</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 form_abstract">
+				<div class="form-group">
+					<div class="col-sm-4">
+						<label for="titleSpeech" >Title of the speech</label>
+					</div>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" name="ctitle" id="ctitle" placeholder="Your title of the proposed talk">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 form_abstract">
+				<div class="form-group">
+					<div class="col-sm-4">
+						<label>Attach your Abstract (PDF) <span class="note">*</span></label>
 					</div>
 					<div class="col-sm-5">
-						<input type="text" name="user" required class="form-control">
+                		<input id="PDF" name="userfile" type="file" class="form-control" placeholder="Browse" required />
 					</div>
 				</div>
 			</div>
@@ -373,7 +409,6 @@
 					<div class="col-sm-4"></div>
 					<div class="col-sm-5">
 						<button type="submit" class="btn btn-primary">Submit</button>
-						<button type="submit" class="btn btn-default">Reset</button>
 					</div>
 				</div>
 			</div>

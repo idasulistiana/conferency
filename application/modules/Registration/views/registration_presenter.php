@@ -1,9 +1,12 @@
 <div id="body">
 	<div class="content">
-	<form action="<?php echo site_url('Registration/regis/speaker') ?>" method="POST">
-		<?php if($this->session->flashdata('user_error')) { ?>
-		    <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;Username has been taken</div>
-		<?php } ?>
+	<?php if($this->session->flashdata('error')){ ?>
+			<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;<?php echo $this->session->flashdata('error'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+	<?php } ?>
+	<?php if($this->session->flashdata('sukses')){ ?>
+			<div class="alert alert-success" role="alert"><span class="sr-only">Success:</span>&nbsp;<?php echo $this->session->flashdata('sukses'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+	<?php } ?>
+	<form action="<?php echo site_url('Registration/regis/speaker') ?>" method="POST" enctype="multipart/form-data">
 			<div class="col-sm-12 ">
 				<div class="mark_title">
 					<span class="note">* </span> Marked field are required
@@ -364,10 +367,18 @@
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="inputAbsCategory" >Abstract Category</label>
+						<label for="category" >Abstract Category  <span class="note">*</span></label>
 					</div>
 					<div class="col-sm-8">
-						<input type="text" class="form-control" name="category" id="category" placeholder="Your Abstract Category">
+						<select class="form-control" name="category" id="category" required>
+							<option value="Technology of Biomass">Technology of Biomass</option>
+							<option value="Application of Biomass">Application of Biomass</option>
+							<option value="Sustainability of Biomass">Sustainability of Biomass</option>
+							<option value="Environment of Biomass">Environment of Biomass</option>
+							<option value="SCM of Biomass">SCM of Biomass</option>
+							<option value="Application of ICT for Biomass">Application of ICT for Biomass</option>
+							<option value="Other">Other</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -384,21 +395,10 @@
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label>Username <span class="note">*</span></label>
+						<label>Attach your Abstract (PDF) <span class="note">*</span></label>
 					</div>
 					<div class="col-sm-5">
-						<input type="text" name="user" required class="form-control">
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label >Password <span class="note">*</span></label>
-					</div>
-					<div class="col-sm-5">
-						<input type="password" name="pass" required class="form-control">
+                		<input id="PDF" name="userfile" type="file" class="form-control" placeholder="Browse" required />
 					</div>
 				</div>
 			</div>

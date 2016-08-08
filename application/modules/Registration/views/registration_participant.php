@@ -1,9 +1,10 @@
 <div id="body">
 	<div class="content">
-		<form action="<?php echo site_url('Registration/regis/participant') ?>" method="POST">
-		<?php if($this->session->flashdata('user_error')) { ?>
-		    <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;Username has been taken</div>
+		<h2 align="center"><br>Registration for Participant</h2>
+		<?php if($this->session->flashdata('sukses')){ ?>
+				<div class="alert alert-success" role="alert"><span class="sr-only">Success:</span>&nbsp;<?php echo $this->session->flashdata('sukses'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
 		<?php } ?>
+		<form action="<?php echo site_url('Registration/regis/participant') ?>" method="POST">
 			<div class="col-sm-12 ">
 				<div class="mark_title">
 					<span class="note">* </span> Marked field are required
@@ -358,27 +359,6 @@
 					</div>
 					<div class="col-sm-8">
 						<textarea name="address" rows="3" class="form-control" id="address" maxlength="150"></textarea>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label>Username <span class="note">*</span></label>
-					</div>
-					<div class="col-sm-5">
-						<input type="text" name="user" required class="form-control">
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label >Password <span class="note">*</span></label>
-					</div>
-					<div class="col-sm-5">
-						<input type="password" name="pass" required class="form-control">
 					</div>
 				</div>
 			</div>

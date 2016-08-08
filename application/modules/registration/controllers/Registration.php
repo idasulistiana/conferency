@@ -7,24 +7,21 @@ class Registration extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Registration_m');
+		$this->load->library('upload');
+		$this->load->helper(array('form','file'));
       	error_reporting(~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
     }
 
 	public function index(){
-		$data['content_view']='registration_speaker';
+		/*$data['content_view']='registration_presenter';
 		$this->load->view('layout',$data);
 	}
-	public function participant(){
+	public function participant(){*/
 		$data['content_view']='registration_participant';
 		$this->load->view('layout',$data);
 	}
 	public function regis($x){
-		$this->Registration_m->setUsername($this->input->post('user'));
-		if($this->Registration_m->cek()->jml > 0){
-			$this->session->set_flashdata('user_error', 1);
-			if($x == 'participant') $y = 'participant'; else $y = '';
-			redirect(site_url('Registration/'.$y));
-		}else{
+		//$this->Registration_m->setUsername($this->input->post('user'));
 			$this->Registration_m->setTitle($this->input->post('title'));
 			$this->Registration_m->setFName($this->input->post('fName'));
 			$this->Registration_m->setLName($this->input->post('lName'));
@@ -35,16 +32,34 @@ class Registration extends CI_Controller {
 			$this->Registration_m->setEmail($this->input->post('email'));
 			$this->Registration_m->setPhone($this->input->post('phone'));
 			$this->Registration_m->setAddress($this->input->post('address'));
-			$this->Registration_m->setPass($this->input->post('pass'));
+			//$this->Registration_m->setPass($this->input->post('pass'));
 			if($x == 'speaker'){
 				$this->Registration_m->setAbstractCat($this->input->post('category'));
 				$this->Registration_m->setTSpeech($this->input->post('ctitle'));
-				$this->Registration_m->regis_sp();
+				$con['upload_path'] = './assets/uploads/pdf/';
+				$con['allowed_types'] = 'pdf';
+				$this->upload->initialize($con);
+				$this->load->library('upload', $con);
+				if (!($this->upload->do_upload('userfile'))) {
+					$this->session->set_flashdata('error',$this->upload->display_errors());
+					redirect(site_url('Registration/'));
+				}else{
+					$data = array(
+						'nm_pdf' => $this->upload->data('file_name'),
+						'tipe_pdf' => $this->upload->data('file_type')
+					);
+					$this->Registration_m->setAbstractFile($data['nm_pdf']);
+					$this->Registration_m->regis_sp();
+					$rg = '';
+					$this->session->set_flashdata('sukses', 'Thankyou for Registration!');
+					redirect(site_url('Abstract_web/'));
+				}
 			}else{
+				$rg = 'participant';
 				$this->Registration_m->regis_pt();
+				$this->session->set_flashdata('sukses', 'Thankyou for Registration!');
+				redirect(site_url('Registration/'));
 			}
-			redirect(site_url('Login'));
-		}
 	}
 }
 ?>

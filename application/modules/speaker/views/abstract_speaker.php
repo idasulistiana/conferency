@@ -1,8 +1,10 @@
 <div id="body">
 	<div class="content">
 		<div class="col-md-12">
-			<?php if($abstract == ""){ if($this->session->flashdata('error')){ ?>
+			<?php if($this->session->flashdata('error')){ ?>
 			<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;<?php echo $this->session->flashdata('error'); ?></div>
+			<?php } else if($this->session->flashdata('sukses')){ ?>
+			<div class="alert alert-success" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Success:</span>&nbsp;<?php echo $this->session->flashdata('sukses'); ?></div>
 			<?php } ?>
 			<form class="form-horizontal" enctype="multipart/form-data" method="post" action="<?php echo site_url('Speaker/pupload');?>"> 
 			<div class="col-md-8">

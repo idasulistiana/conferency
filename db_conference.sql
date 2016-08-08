@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2016 at 02:21 PM
+-- Generation Time: Aug 08, 2016 at 07:24 AM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -37,16 +37,8 @@ CREATE TABLE IF NOT EXISTS `tbl_participant` (
   `country` varchar(50) NOT NULL,
   `email` varchar(30) NOT NULL,
   `phone` varchar(20) NOT NULL,
-  `address` text NOT NULL,
-  `username` varchar(30) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbl_participant`
---
-
-INSERT INTO `tbl_participant` (`id_participant`, `title`, `fname`, `lname`, `company`, `city`, `state`, `country`, `email`, `phone`, `address`, `username`) VALUES
-(1, 'Ms', 'Nastiti', 'Arum', 'Bogor Agricultural University', 'Bogor', 'West Java', 'Indonesia', 'nastitiarum@yahoo.com', '0898902883', '', 'nastiti');
+  `address` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -83,17 +75,8 @@ CREATE TABLE IF NOT EXISTS `tbl_speaker` (
   `address` text NOT NULL,
   `abstract_category` varchar(30) NOT NULL,
   `title_speech` varchar(50) NOT NULL,
-  `username` varchar(30) NOT NULL,
   `abstract_file` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbl_speaker`
---
-
-INSERT INTO `tbl_speaker` (`id_speaker`, `title`, `fname`, `lname`, `company`, `city`, `state`, `country`, `email`, `phone`, `address`, `abstract_category`, `title_speech`, `username`, `abstract_file`) VALUES
-(1, 'Ms', 'Ida', 'Sulistiana', 'IPB', 'Bogor', 'West Java', 'Select country', 'omscbx@lala', '08937492', 'lorem ipsum', '', '', 'idaa', 'Kuliah_Statistika_Lanjut.pdf'),
-(2, 'Ms', 'Sulistiana', 'Ida', 'Bogor Agricultural University', 'Depok', 'West Java', 'Indonesia', 'operator@mail.com', '0898902883', '', 'Informatics', '', 'idasulis', '');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -107,15 +90,6 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `status` int(11) NOT NULL COMMENT '1=admin;2=speaker;3=participant',
   `ket` int(11) DEFAULT NULL COMMENT '1=bayar;2=blm'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbl_user`
---
-
-INSERT INTO `tbl_user` (`username`, `password`, `status`, `ket`) VALUES
-('idaa', '801cbb75ec525fe88129a531ca57b69e', 2, 2),
-('idasulis', '81dc9bdb52d04dc20036dbd8313ed055', 2, 2),
-('nastiti', '81dc9bdb52d04dc20036dbd8313ed055', 3, 2);
 
 --
 -- Indexes for dumped tables
@@ -153,7 +127,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_participant`
 --
 ALTER TABLE `tbl_participant`
-  MODIFY `id_participant` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id_participant` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_rundown`
 --
@@ -163,17 +137,7 @@ ALTER TABLE `tbl_rundown`
 -- AUTO_INCREMENT for table `tbl_speaker`
 --
 ALTER TABLE `tbl_speaker`
-  MODIFY `id_speaker` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `tbl_rundown`
---
-ALTER TABLE `tbl_rundown`
-ADD CONSTRAINT `tbl_rundown_ibfk_1` FOREIGN KEY (`id_speaker`) REFERENCES `tbl_speaker` (`id_speaker`);
-
+  MODIFY `id_speaker` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
