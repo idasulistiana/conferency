@@ -42,6 +42,16 @@ class Registration extends CI_Controller {
 				$this->load->library('upload', $con);
 				if (!($this->upload->do_upload('userfile'))) {
 					$this->session->set_flashdata('error',$this->upload->display_errors());
+					$this->session->set_flashdata('title', $this->input->post('title'));
+					$this->session->set_flashdata('fName', $this->input->post('fName'));
+					$this->session->set_flashdata('lName', $this->input->post('lName'));
+					$this->session->set_flashdata('company', $this->input->post('company'));
+					$this->session->set_flashdata('city', $this->input->post('city'));
+					$this->session->set_flashdata('state', $this->input->post('state'));
+					$this->session->set_flashdata('country', $this->input->post('country'));
+					$this->session->set_flashdata('email', $this->input->post('email'));
+					$this->session->set_flashdata('phone', $this->input->post('phone'));
+					$this->session->set_flashdata('address', $this->input->post('address'));
 					redirect(site_url('Registration/'));
 				}else{
 					$data = array(
@@ -51,7 +61,7 @@ class Registration extends CI_Controller {
 					$this->Registration_m->setAbstractFile($data['nm_pdf']);
 					$this->Registration_m->regis_sp();
 					$rg = '';
-					$this->session->set_flashdata('sukses', 'Thankyou for Registration!');
+					$this->session->set_flashdata('sukses', 'Thankyou for Submit Your Abstract!');
 					redirect(site_url('Abstract_web/'));
 				}
 			}else{
