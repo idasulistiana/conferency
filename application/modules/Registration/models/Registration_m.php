@@ -13,7 +13,7 @@
 		private $address;
 		private $abstract_category;
 		private $title_speech;
-		private $username;
+		private $abstract_file;
 		private $pass;
 
 		public function setID($val){ $this->id = $val; }
@@ -29,8 +29,7 @@
 		public function setAddress($val){ $this->address = $val; }
 		public function setAbstractCat($val){ $this->abstract_category = $val; }
 		public function setTSpeech($val){ $this->title_speech = $val; }
-		public function setUsername($val){ $this->username = $val; }
-		public function setPass($val){ $this->pass = $val; }
+		public function setAbstractFile($val){ $this->abstract_file = $val; }
 
 		public function getID(){ return $this->id; }
 		public function getTitle(){ return $this->title; }
@@ -45,8 +44,7 @@
 		public function getAddress(){ return $this->address; }
 		public function getAbstractCat(){ return $this->abstract_category; }
 		public function getTSpeech(){ return $this->title_speech; }
-		public function getUsername(){ return $this->username; }
-		public function getPass(){ return $this->pass; }
+		public function getAbstractFile(){ return $this->abstract_file; }
 
 		public function index(){
 			$data['content_view']='registration_presenter';
@@ -70,10 +68,10 @@
 				'address' => $this->getAddress(),
 				'abstract_category' => $this->getAbstractCat(),
 				'title_speech' => $this->getTSpeech(),
-				'username' => $this->getUsername()
+				'abstract_file' => $this->getAbstractFile()
 			);
-			$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 2, 'ket' => 2);
-			$this->db->insert('tbl_user', $data1);
+			//$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 2, 'ket' => 2);
+			//$this->db->insert('tbl_user', $data1);
 			return $this->db->insert('tbl_speaker', $data);
 
 		}
@@ -91,11 +89,11 @@
 				'country' => $this->getCountry(),
 				'email' => $this->getEmail(),
 				'phone' => $this->getPhone(),
-				'address' => $this->getAddress(),
-				'username' => $this->getUsername()
+				'address' => $this->getAddress()
+				//'username' => $this->getUsername()
 			);
-			$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 3, 'ket' => 2);
-			$this->db->insert('tbl_user', $data1);
+			//$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 3, 'ket' => 2);
+			//$this->db->insert('tbl_user', $data1);
 			return $this->db->insert('tbl_participant', $data);
 		
 		}

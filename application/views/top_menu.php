@@ -37,16 +37,19 @@
 				<li <?php if ($this->uri->segment(1)=='About_us') echo 'class="active"'?>>
 					<a href="<?php echo site_url('About_us') ?>">About Us</a>
 				</li>
-				<li class="dropdown">
-					<a  href="#" data-toggle="dropdown">Registration</a>
-						<ul class="dropdown-menu">
+				<li <?php if ($this->uri->segment(1)=='Abstract_web') echo 'class="active"'?>>
+					<a href="<?php echo site_url('Abstract_web') ?>">Abstract</a>
+				</li>
+				<li class="<?php if ($this->uri->segment(1)=='Registration') echo ' active'?>">
+					<a  href="<?php echo site_url('Registration') ?>">Registration</a>
+						<!-- <ul class="dropdown-menu">
 							<li class="col-sm-12">
-								<a href="<?php echo site_url() ?>registration" >Registration Presenter</a>
+								<a href="<?php echo site_url() ?>Registration" >Registration Presenter</a>
 							</li>
 							<li class="col-sm-12">	
-								<a href="<?php echo site_url() ?>registration"> Registration Participants</a>
+								<a href="<?php echo site_url() ?>Registration/participant"> Registration Participants</a>
 							</li>
-						</ul>
+						</ul> -->
 				</li>
 				<li <?php if ($this->uri->segment(1)=='technical_program') echo 'class="active"'?> class="dropdown">
 					<a  href="<?php echo site_url('technical_program') ?>" data-toggle="dropdown">Technical Program</a>

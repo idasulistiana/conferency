@@ -1,9 +1,35 @@
 <div id="body">
 	<div class="content">
-		<form action="<?php echo site_url('Registration/regis/participant') ?>" method="POST">
-		<?php if($this->session->flashdata('user_error')) { ?>
-		    <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;Username has been taken</div>
+		<h2 align="center"><br>Registration for Participant</h2>
+		<div style="margin:30px"> <b>
+		<h3>Payment</h3> 
+		<p>
+			Registration fee for international regular is USD 100 and for domestic regular is IDR 1.000.000. The latest registration for general participant is October 8th, 2016. It should be transferred to:
+			<div class="col-sm-2 col-md-2 col-xs-2">Bank</div>
+			<div class="col-sm-6">: BNI</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-2 col-md-2 col-xs-2">Branch</div>
+			<div class="col-sm-6">: Bogor</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-2 col-md-2 col-xs-2">Address</div>
+			<div class="col-sm-6">: Kampus IPB, Jl. Raya Bogor, Jasinga, Darmaga</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-2 col-md-2 col-xs-2">On behalf of</div>
+			<div class="col-sm-6">: Rektor IPB c/q SBRC</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-2 col-md-2 col-xs-2">Account No.</div>
+			<div class="col-sm-6">: 0166732560</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-2 col-md-2 col-xs-2">Swift Code</div>
+			<div class="col-sm-6">: BNINIDJABGR</div>
+			<div class="clearfix"></div>
+			<br>Please confirm your payment on <a href="mailto:icbbogor2016@gmail.com">icbbogor2016@gmail.com</a>.
+		</p></b>
+		</div>
+		<?php if($this->session->flashdata('sukses')){ ?>
+				<div class="alert alert-success" role="alert"><span class="sr-only">Success:</span>&nbsp;<?php echo $this->session->flashdata('sukses'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
 		<?php } ?>
+		<form action="<?php echo site_url('Registration/regis/participant') ?>" method="POST">
 			<div class="col-sm-12 ">
 				<div class="mark_title">
 					<span class="note">* </span> Marked field are required
@@ -14,7 +40,7 @@
 					<div class="col-sm-4">
 						<label>Title <span class="note">*</span></label>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-2 col-md-2 col-xs-2">
 						<select name="title" class="form-control" required>
 							<option value="">Select Title</option>
 							<option value="Mr">Mr</option>
@@ -57,7 +83,7 @@
 				 	<div class="col-sm-4">
 				 		<label for="inputLastName">City</label>
 				    </div>
-				    <div class="col-sm-5">
+				    <div class="col-sm-2 col-md-2 col-xs-2">
 				    	<input type="text" class="form-control" name="city" id="city" placeholder="City" required>
 				    </div>
 				 </div>
@@ -68,7 +94,7 @@
 					<div class="col-sm-4">
 				 		<label for="inputLastName">State</label>
 				   	</div>
-				    <div class="col-sm-5">
+				    <div class="col-sm-2 col-md-2 col-xs-2">
 				    	<input type="text" class="form-control" name="state" id="state" placeholder="State" required>
 				    </div>
 				</div>
@@ -79,7 +105,7 @@
 					<div class="col-sm-4">
 						<label for="selectCountry" >Country <span class="note">*</span></label>
 					</div>
-				    <div class="col-sm-5">
+				    <div class="col-sm-2 col-md-2 col-xs-2">
 				    	<select class="form-control" name="country" id="country" required>
 				        	<option selected="selected" value="">Select country</option>
 				            <option value="United States">United States</option>
@@ -334,7 +360,7 @@
 					<div class="col-sm-4">
 						<label for="inputEmail" >Email <span class="note">*</span></label>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-2 col-md-2 col-xs-2">
 						<input type="email" class="form-control" name="email" id="email" placeholder="Your email" required>
 					</div>
 				</div>
@@ -345,7 +371,7 @@
 					<div  class="col-sm-4">
 						<label for="inputPhoneNumber">Phone Number <span class="note">*</span></label>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-2 col-md-2 col-xs-2">
 						<input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" maxlength="20" required pattern="^([\+][0-9]{1,3}[\ \.\-])?([\(]{1}[0-9]{2,6}[\)])?([0-9\ \.\-\/]{3,20})((x|ext|extension)[\ ]?[0-9]{1,4})?$">
 					</div>
 				</div>
@@ -361,32 +387,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label>Username <span class="note">*</span></label>
-					</div>
-					<div class="col-sm-5">
-						<input type="text" name="user" required class="form-control">
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-			<div class="col-sm-12 form_abstract">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<label >Password <span class="note">*</span></label>
-					</div>
-					<div class="col-sm-5">
-						<input type="password" name="pass" required class="form-control">
-					</div>
-				</div>
-			</div>
 			<div class="clearfix"></div>
 			<div class="col-sm-12 form_abstract">
 				<div class="form-group">
 					<div class="col-sm-4"></div>
-					<div class="col-sm-5">
+					<div class="col-sm-2 col-md-2 col-xs-2">
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</div>
 				</div>
