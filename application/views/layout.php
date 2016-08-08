@@ -12,8 +12,6 @@
 					$this->load->view('about_us');
 				}else if ($content_view=='abstract_web'){
 					$this->load->view('abstract_web');
-				}else if ($content_view=='registration_speaker'){
-					$this->load->view('registration_speaker');
 				}else if ($content_view=='venue_hospitally'){
 					$this->load->view('venue_hospitally');
 				}else if ($content_view=='awards'){
@@ -24,6 +22,8 @@
 					$this->load->view('technical_program');
 				}else if ($content_view=='registration_participant'){
 					$this->load->view('registration_participant');
+				}else if ($content_view=='registration_presenter'){
+					$this->load->view('registration_presenter');	
 				}else if ($content_view=='home_speaker'){
 					$this->load->view('home_speaker');
 				}else if ($content_view=='abstract_speaker'){

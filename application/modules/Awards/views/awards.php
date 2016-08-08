@@ -1,5 +1,6 @@
 
 	<div id="body">
+	<div class="clearfix"></div>
 		<div class="section">
 			<h2>Awards</h2>
 			<p>

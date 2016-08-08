@@ -48,7 +48,15 @@
 		public function getUsername(){ return $this->username; }
 		public function getPass(){ return $this->pass; }
 
+		public function index(){
+			$data['content_view']='registration_presenter';
+			$this->load->view('layout',$data);
+			// print_r($data_view);
+
+		}
 		public function regis_sp(){
+			$data_view['content_view']='registration_presenter';
+			$this->load->view('layout',$data_view);
 			$data = array(
 				'title' => $this->getTitle(),
 				'fname' => $this->getFName(),
@@ -67,8 +75,12 @@
 			$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 2, 'ket' => 2);
 			$this->db->insert('tbl_user', $data1);
 			return $this->db->insert('tbl_speaker', $data);
+
 		}
 		public function regis_pt(){
+			$data_view['content_view']='registration_participant';
+			$this->load->view('layout',$data_view);
+
 			$data = array(
 				'title' => $this->getTitle(),
 				'fname' => $this->getFName(),
@@ -85,6 +97,7 @@
 			$data1 = array('username' => $this->getUsername(), 'password' => md5($this->getPass()), 'status' => 3, 'ket' => 2);
 			$this->db->insert('tbl_user', $data1);
 			return $this->db->insert('tbl_participant', $data);
+		
 		}
 		public function cek(){
 			$this->db->select('count(*) as jml')->from('tbl_user')->where('username', $this->getUsername());

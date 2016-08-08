@@ -1,5 +1,6 @@
 
 	<div id="body">
+	<div class="clearfix"></div>
 		<div class="section">
 			<h2>Platinum Sponsor</h2>
 			<p>
