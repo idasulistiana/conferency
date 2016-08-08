@@ -1,36 +1,25 @@
 	<div id="footer">
 		<div>
 			<p>
-				Copyright &copy; <a href="index.html">Cardio Center</a>
+				Copyright &copy; <a href="index.html">SBRC</a>
 			</p>
 			<ul>
-				<li>
-					<a href="index.html">home</a>
+				<li <?php if ($this->uri->segment(1)=='Home') echo 'class="active"'?>>
+					<a href="<?php echo site_url('Home') ?>">Home</a>
 				</li>
-				<li>
-					<a href="about.html">about</a>
+				<li <?php if ($this->uri->segment(1)=='About_us') echo 'class="active"'?>>
+					<a href="<?php echo site_url('About_us') ?>">About Us</a>
 				</li>
-				<li>
-					<a href="doctors.html">our doctors</a>
+				<li <?php if ($this->uri->segment(1)=='venue_hospitally') echo 'class="active"'?>>
+					<a href="<?php echo site_url() ?>venue_hospitally">Venue & Hospitality</a>
 				</li>
-				<li>
-					<a href="services.html">services</a>
+				<li <?php if ($this->uri->segment(1)=='awards') echo 'class="active"'?>>
+					<a href="<?php echo site_url() ?>awards">Awards</a>
 				</li>
-				<li>
-					<a href="forms.html">forms</a>
+				<li <?php if ($this->uri->segment(1)=='sponsor') echo 'class="active"'?>>
+					<a href="<?php echo site_url() ?>sponsor">Sponsor</a>
 				</li>
-				<li>
-					<a href="contact.html">contact</a>
-				</li>
-				<li>
-					<a href="blog.html">blog</a>
-				</li>
+
 			</ul>
-			<div>
-				<span>stay connected:</span>
-				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
-				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
-				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
-			</div>
 		</div>
 	</div>

@@ -25,7 +25,8 @@
 					</p>
 				</div>
 				<div class="aside">
-					<div id="myCarousel" class="carousel vertical slide" data-ride="carousel" data-interval="2000">
+					<h2 >Speakers</h2>
+					<div id="myCarousel" class="carousel vertical slide" data-ride="carousel" >
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
 					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -37,12 +38,19 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" >
 					    <div class="item active">
-					      <img src="<?php echo base_url(); ?>assets/images/sponsor.jpg" alt="Chania" class="img_sponsor">
+					      <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker">
+					    	<span class="title_img_soponsor">Emily William<br>
+					    	Indonesia University</span>
 					    </div>
-
+					    <!-- <div class="item">
+					      <img src="<?php echo base_url(); ?>assets/images/couple.jpg" alt="Chania" class="img_speaker">
+					    </div>
+					     <div class="item">
+					      <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker">
+					    </div>
 					    <div class="item">
-					      <img src="<?php echo base_url(); ?>assets/images/sponsor.jpg" alt="Chania" class="img_sponsor">
-					    </div>
+					      <img src="<?php echo base_url(); ?>assets/images/couple.jpg" alt="Chania" class="img_speaker">
+					    </div>  -->
 					  <!-- Left and right controls -->
 					  <a class="top carousel-control " href="#myCarousel" role="button" data-slide="prev">
 					    <span class="glyphicon glyphicon-chevron-up " aria-hidden="true"></span>
@@ -60,24 +68,22 @@
 	<div class="footer">
 			<div class="sponsore_title">Sponsored By:</div>
 			<div class="sponsor">
-				<a href="doctors.html"><img src="<?php echo base_url();?>assets/images/sponsor.jpg" alt=""></a>
-				<h3>Sponsore 1</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi.
-				</p>
+				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor">
 			</div>
 			<div class="sponsor">
-				<a href="services.html"><img src="<?php echo base_url();?>assets/images/sponsor.jpg" alt=""></a>
-				<h3>Sponsore 2</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi.
-				</p>
+				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor">
 			</div>
 			<div class="sponsor">
-				<a href="services.html"><img src="<?php echo base_url();?>assets/images/sponsor.jpg" alt=""></a>
-				<h3>Sponsore 3</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi.
-				</p>
+				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor">
+			</div>
+			<div class="sponsore_title">Co Organization By:</div>
+			<div class="sponsor">
+				<img src="<?php echo base_url();?>assets/images/Ristekdikti_logo.jpg" alt="" class="img_sponsor">
+			</div>
+			<div class="sponsor">
+				<img src="<?php echo base_url();?>assets/images/Ristekdikti_logo.jpg" alt="" class="img_sponsor">
+			</div>
+			<div class="sponsor">
+				<img src="<?php echo base_url();?>assets/images/Ristekdikti_logo.jpg" alt="" class="img_sponsor">
 			</div>
 		</div>

@@ -237,18 +237,20 @@
     float: left;
     margin: 0 10px;
     overflow-y: scroll;
-    padding: 40px 0px;
+    padding: 33px 0px;
     width: 620px;
-    height: 298px;
+    height: 314px;
+
 }
 #body .body .section .article h2 {
-	clear: both;
-	color: #ef414a;
-	font-family: 'Arapey';
-	font-size: 24px;
-	font-weight: normal;
-	margin: 0;
-	padding: 0 0 22px;
+    clear: both;
+    color: #ef414a;
+    font-family: 'Arapey';
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    margin-top: -12;
+    padding: 0 0 22px;
 }
 #body .body .section .article img {
 	display: block;
@@ -273,13 +275,21 @@
 #body .body .section .article p a:hover {
 	color: #333;
 }
-#body .body .section .aside {
+/*#body .body .section .aside {
 	float: left;
 	margin: 0 10px;
 	overflow: hidden;
 	padding: 43px 0 39px;
 	width: 300px;
-}
+}*/
+#body .body .section .aside {
+    float: left;
+    /* margin: 0 10px; */
+    overflow: hidden;
+    padding-bottom: 11px;
+    /* padding: 43px 0 39px; */
+    background-color: #f2f2f2;
+    width: 320px;}
 #body .body .section .aside > a {
 	color: #797979;
 	display: inline-block;
@@ -326,6 +336,7 @@
 	padding: 29px 0 0;
 	overflow: hidden;
 	width: 960px;
+	padding-bottom:20px;
 }
 #body .footer .sponsor {
 	background: #fff;
@@ -357,15 +368,15 @@
 	display: block;
 }
 #body .footer div h3 {
-	background: url(../images/dots.gif) no-repeat bottom center;
-	color: #144879;
-	font-family: 'Arapey';
-	font-size: 18px;
-	font-weight: normal;
-	margin: 0;
-	padding: 18px 0 21px;
-	text-align: center;
-	text-transform: capitalize;
+    background: url(../images/dots.gif) no-repeat top center;
+    color: #144879;
+    font-family: 'Arapey';
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20;
+    padding: 20px 0px 0px;
+    text-align: center;
+    text-transform: capitalize;
 }
 #body .footer div p {
 	color: #797979;
@@ -1712,7 +1723,13 @@ a.bottom.carousel-control{
 }
 /*=================sponsor.CSS===============*/
 .img_sponsor{
-	width:200px;
+	width:234px;
+}
+.img_speaker{
+    width: 179px;
+    padding-top: 30;
+    padding-bottom: 30;
+    margin: 0 auto;
 }
 .img_hotelsalak{
 	display: block;
@@ -1724,4 +1741,22 @@ a.bottom.carousel-control{
     font-size: 18px;
     text-align: center;
     line-height:1.4px;
+}
+#body .body .section  h2 {
+     text-align: center;
+    margin-top: 20px;
+    padding: 0;
+}
+.carousel-indicators{
+	display: none;
+}
+.carousel-inner .item .title_img_soponsor{
+	display: block;
+    text-align: center;
+    margin-top: -25;
+    padding-bottom: 24px;
+}
+.title_img_soponsor b{
+	padding: 0px;
+    color: black;
 }

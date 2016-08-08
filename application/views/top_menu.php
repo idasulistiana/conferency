@@ -37,9 +37,6 @@
 				<li <?php if ($this->uri->segment(1)=='About_us') echo 'class="active"'?>>
 					<a href="<?php echo site_url('About_us') ?>">About Us</a>
 				</li>
-				<li <?php if ($this->uri->segment(1)=='Abstract_web') echo 'class="active"'?>>
-					<a href="<?php echo site_url('Abstract_web') ?>">Abstract</a>
-				</li>
 				<li class="dropdown">
 					<a  href="#" data-toggle="dropdown">Registration</a>
 						<ul class="dropdown-menu">
