@@ -33,9 +33,9 @@
 					$this->load->view('cabs_speaker');
 				}else if ($content_view=='home_audience'){
 					$this->load->view('home_audience');
+				}else if ($content_view=='organization'){
+					$this->load->view('organization');
 				}
-
-
 			?>
 			
 		<?php $this->load->view('bottom_menu') ;?>

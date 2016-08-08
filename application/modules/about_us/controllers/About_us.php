@@ -12,5 +12,9 @@ class About_us extends CI_Controller {
 		$data['content_view']='about_us';
 		$this->load->view('layout',$data);
 	}
+	function organization(){
+		$data['content_view']='organization';
+		$this->load->view('layout',$data);
+	}
 }
 ?>
