@@ -25,7 +25,7 @@
 	src: url('../fonts/OpenSans-Bold/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.svg') format('svg');
 }
 #body {
-	background: #eae3cb;
+	background: #f2f2f2;
 	color: #797979;
 	font-family: 'OpenSans-Light';
 	font-weight: normal;
@@ -45,7 +45,7 @@
 
 #header {
 	/*background: url(../images/bg-header.jpg) no-repeat top center;*/
-	background-color:#eae3cb;
+	background-color:#f2f2f2;
 	margin: 0;
 	padding: 0;
 }
@@ -148,7 +148,7 @@
 	background: url(../images/border-top.gif) repeat-x bottom left;
 	margin-top: 20px;
 	margin-left: -15px;
-	background-color: #eae3cb;
+	background-color: #f2f2f2;
 	padding: 0 0 19px;
 }
 #body .header div {
@@ -222,7 +222,7 @@
 	color: #fff;
 }
 #body .body {
-	background: #eae3cb url(../images/border-bottom.gif) repeat-x bottom left;
+	background: #f2f2f2 url(../images/border-bottom.gif) repeat-x bottom left;
 	margin: 0;
 	padding: 0 0 20px;
 }
@@ -1709,4 +1709,19 @@ a.bottom.carousel-control{
 .benner .top_benner{
 	width: 1023px;
     margin: 0 auto;
+}
+/*=================sponsor.CSS===============*/
+.img_sponsor{
+	width:200px;
+}
+.img_hotelsalak{
+	display: block;
+	margin: 0 auto;
+}
+.text_venue{
+	font-weight: bold;
+    font-family: open-sans;
+    font-size: 18px;
+    text-align: center;
+    line-height:1.4px;
 }
