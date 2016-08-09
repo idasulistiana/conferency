@@ -10,7 +10,7 @@
 	<div style="margin:30px"> <b>
 		<h3>Payment</h3> 
 		<p>
-			Registration fee for international regular is USD 100 and for domestic regular is IDR 1.000.000. The latest registration for general participant is October 8th, 2016. It should be transferred to:
+			Registration fee for international participants is USD 100 and for domestic participants is IDR 1.000.000. The latest registration for general participant is October 8th, 2016. It should be transferred to:
 			<div class="col-sm-2 col-md-2 col-xs-2">Bank</div>
 			<div class="col-sm-6">: BNI</div>
 			<div class="clearfix"></div>
@@ -85,7 +85,7 @@
 				 	<div class="col-sm-4">
 				 		<label for="inputLastName">City</label>
 				    </div>
-				    <div class="col-sm-5">
+				    <div class="col-sm-3 col-md-3 col-xs-3">
 				    	<input type="text" class="form-control" name="city" id="city" placeholder="City" required <?php if($this->session->flashdata('city')) echo "value = '".$this->session->flashdata('city')."'"; ?>>
 				    </div>
 				 </div>
@@ -96,7 +96,7 @@
 					<div class="col-sm-4">
 				 		<label for="inputLastName">State</label>
 				   	</div>
-				    <div class="col-sm-5">
+				    <div class="col-sm-3 col-md-3 col-xs-3">
 				    	<input type="text" class="form-control" name="state" id="state" placeholder="State" required <?php if($this->session->flashdata('state')) echo "value = '".$this->session->flashdata('state')."'"; ?>>
 				    </div>
 				</div>
@@ -107,7 +107,7 @@
 					<div class="col-sm-4">
 						<label for="selectCountry" >Country <span class="note">*</span></label>
 					</div>
-				    <div class="col-sm-5">
+				    <div class="col-sm-3 col-md-3 col-xs-3">
 				    	<select class="form-control" name="country" id="country" required>
 				        	<option selected="selected" value="">Select country</option>
 				            <option value="United States" <?php if($this->session->flashdata('country') == 'United States') echo "selected"; ?>>United States</option>
@@ -362,7 +362,7 @@
 					<div class="col-sm-4">
 						<label for="inputEmail" >Email <span class="note">*</span></label>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-3 col-md-3 col-xs-3">
 						<input type="email" class="form-control" name="email" id="email" placeholder="Your email" required <?php if($this->session->flashdata('email')) echo "value = '".$this->session->flashdata('email')."'"; ?>>
 					</div>
 				</div>
@@ -373,7 +373,7 @@
 					<div  class="col-sm-4">
 						<label for="inputPhoneNumber">Phone Number <span class="note">*</span></label>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-3 col-md-3 col-xs-3">
 						<input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" maxlength="20" required pattern="^([\+][0-9]{1,3}[\ \.\-])?([\(]{1}[0-9]{2,6}[\)])?([0-9\ \.\-\/]{3,20})((x|ext|extension)[\ ]?[0-9]{1,4})?$" <?php if($this->session->flashdata('phone')) echo "value = '".$this->session->flashdata('phone')."'"; ?>>
 					</div>
 				</div>

@@ -58,7 +58,8 @@
 #header div .font_red {
     color: #fff;
     font-family: 'OpenSans-Light';
-    font-size: 18px;
+    font-size: 22px;
+    letter-spacing: 3;
     /* display: block; */
     /* float: left; */
     font-weight: bold;
@@ -395,6 +396,8 @@
 }
 #body .content {
 	/*background: #fff url(../images/bg-sidebar.gif) repeat-y top right;*/
+	 line-height: 1.5;
+    font-size: 15;
 	background-color: #fff;
 	border: 1px solid #cdcdcd;
 	border-radius: 6px;
@@ -983,7 +986,7 @@
 	padding: 0 0 17px;
 }
 #body #content #section p {
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 24px;
 	margin: 0;
 	padding: 0;
@@ -1067,7 +1070,9 @@
 	display: inline-block;
 	margin: 0;
 	padding: 0 0 30px;
+	font-size: 15;
 }
+
 #body #content #section > span a {
 	color: #797979;
 	font-family: 'OpenSans-Regular';
@@ -1092,10 +1097,12 @@
 	margin: 0 0 21px;
 }
 #body #content #section > div {
-	background: url(../images/dots2.gif) no-repeat top center;
-	margin: 17px 0 0;
-	overflow: hidden;
-	padding: 21px 0;
+    background: url(../images/dots2.gif) no-repeat top center;
+    margin: 17px 0 0;
+    overflow: hidden;
+    padding: 21px 0;
+    font-size: 15px;
+    line-height: 1.5;
 }
 #body #content #section > div div {
 	float: left;
@@ -1707,6 +1714,7 @@ a.bottom.carousel-control{
 	font-size: 27px;
     margin-top: 10;
     color: #fff;
+
 }
 .benner .title_ipb{
     font-size: 28px;
@@ -1740,7 +1748,6 @@ a.bottom.carousel-control{
     font-family: open-sans;
     font-size: 18px;
     text-align: center;
-    line-height:1.4px;
 }
 #body .body .section  h2 {
      text-align: center;
@@ -1756,7 +1763,29 @@ a.bottom.carousel-control{
     margin-top: -25;
     padding-bottom: 24px;
 }
-.title_img_soponsor b{
+.title_img_soponsor {
 	padding: 0px;
-    color: black;
+	margin: 	0 auto;
+/*    color: black;
+    font-weight: bold;*/
 }
+#body .body .section .aside  #myCarousel .carousel-inner .item span b {
+	color:#111111;
+	padding: 2;
+}
+div.coorganize_title.col-sm-12{
+    margin-top: 30;
+    font-size: 24;
+    color: #ef414a;
+    font-family: 'Arapey';
+    padding: 0;
+}
+.top_benner{
+	text-align: center;
+    letter-spacing: 5;
+}
+.text_benner{
+	font-size:20;
+	letter-spacing:2;
+	color:#111111;
+	font-weight:bold;

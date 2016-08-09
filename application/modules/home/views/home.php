@@ -2,12 +2,12 @@
 	<div id="body">
 		<div class="col-sm-12 header">
 			<div>
-				<img src="<?php echo base_url() ;?>/assets/images/biking.jpg" alt="">
+				<img src="<?php echo base_url() ;?>/assets/images/benner_conference.jpg" alt="">
 				<ul>
 					<p>
-					Meet Inspiring Speakers and Experts at our <span class="font_red"> 3000+ </span> Global  <span class="font_red">  <a href="">Conferenceseries</a></span> Events with over 600+ Conferences, 1200+ Symposiums and 1200+ Workshops on 
-					<span class="font_red">  Medical, Pharma, Engineering, Science, Technology and Business.</span> 
-					Explore and learn more about <span class="font_red"><a href="">Conference Series LLC</a></span>: World’s leading Event Organizer
+					<span class="font_red"> </span><br/>
+					<span class="text_benner">Monday-Tuesday, October 10 - 11th 2016<br/>
+					Salak Tower Hotel, Bogor Indonesia</span>
 					</p>
 				</ul>
 			</div>
@@ -18,9 +18,9 @@
 					<h2>Web Conference Bogor International</h2>
 					<!-- <img src="images/heart.jpg" alt=""> -->
 					<p>
-						Surfactant and Bioenergy Research Center (SBRC) is one of the research centers under the Research and Community Services Agency (LPPM), Bogor Agricultural University (IPB). This research center was established in June 2004 with the name of Surfactant Research and Development Center (SRDC) focusing on biobased surfactants. After the establishment of SRDC, issues on energy crisis and climate change were arising and triggered the center to take part in bioenergy-related research and development. The name of the center was then changed into Surfactant and Bioenergy Research Center (SBRC) in 2006.
-						Surfactant development research consists of processing and technology development research, followed by application of the product in various industries. Bioenergy development research contains integrated upstream to downstream research activities. These activities include breeding and cultivation technique of bioenergy crops; process and technology; role model of institutional development on bioenergy business; dissemination, and promotion. The recent major bioenergy crops to develop are superior Jatropha curcas Linn for biodiesel, unedible cassava for bioethanol and micro/macroalgae as the next alternative environmentally friendly biofuel feedstock. 
-						Surfactant application and developments are focused on Enhanced Oil Recovery (EOR), Improved Oil Recovery (IOR), oil spill dispersants, herbicide and insecticide formulation. In the future research on bioenergy will be focused on biomass conversion from agriculture waste and bioavtur development from CPO base.
+						<p align="justify">&emsp;Biomass is an organic matter originating from agricultural products, plantation products, grasses, industrial waste, urban garbage, household waste, bioaquatic, animal waste, etc.  Biomass can be utilized in various industrial applications.  However, today, the term biomass is mostly used to refer to an energy (fuel) source.  Some of the advantages of energy resulted from biomass is that it is renewable, environmentally friendly, produces less emission, and ensures energy availability.  
+						<p align="justify">&emsp;In addition to its use as an energy source, biomass can be further processed into various types of chemicals needed in chemical, pharmaceutical, oil, and gas, feed, and agricultural industries.  One of the biggest challenges in biomass utilization is the production of high quality commercial products which is energy saving, less waste producing, and sustainable. 
+						<p align="justify">&emsp;Each country has different potential biomass feedstock.  For example, oil palm biomass is plenty in Indonesia and Malaysia, cassava and sugarcane biomass in Thailand, rice biomass in Vietnam, sugarcane biomass in Brazil, wood biomass in Canada.  This different biomass feedstock has stimulated the development of biomass production technology.  This notion has been the background of this International Conference on Biomass: Technology, Application, and Sustainable Development which is conducted as a sharing medium of ideas and knowledge to accelerate the advancement of technology in biomass processing.  This technology is important to create variety of products which can be produced with high added value in a cheaper and environmentally friendly process so that they can be commercialized.  
 
 					</p>
 				</div>
@@ -39,18 +39,24 @@
 					  <div class="carousel-inner" >
 					    <div class="item active">
 					      <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker">
-					    	<span class="title_img_soponsor">Emily William<br>
+					    	<span class="title_img_soponsor"><b>Emily William</b><br>
 					    	Indonesia University</span>
 					    </div>
-					    <!-- <div class="item">
-					      <img src="<?php echo base_url(); ?>assets/images/couple.jpg" alt="Chania" class="img_speaker">
+					    <div class="item">
+					      <img src="<?php echo base_url(); ?>assets/images/harrison.jpg" alt="Chania" class="img_speaker">
+					 		<span class="title_img_soponsor"><b>John William</b><br>
+					    	 Bogor Agricultural University</span>
 					    </div>
 					     <div class="item">
 					      <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker">
+					    	<span class="title_img_soponsor"><b>Jefferson</b><br>
+					    	 Bogor Agricultural University</span>
 					    </div>
 					    <div class="item">
-					      <img src="<?php echo base_url(); ?>assets/images/couple.jpg" alt="Chania" class="img_speaker">
-					    </div>  -->
+					      <img src="<?php echo base_url(); ?>assets/images/harrison.jpg" alt="Chania" class="img_speaker">
+					    	 <span class="title_img_soponsor"><b>Frank</b><br>
+					    	Indonesia University</span>
+					    </div> 
 					  <!-- Left and right controls -->
 					  <a class="top carousel-control " href="#myCarousel" role="button" data-slide="prev">
 					    <span class="glyphicon glyphicon-chevron-up " aria-hidden="true"></span>
@@ -66,24 +72,25 @@
 		</div>
 	</div>
 	<div class="footer">
-			<div class="sponsore_title">Sponsored By:</div>
+		<div class="coorganize_title col-sm-12"> Organization By:</div>
+			
 			<div class="sponsor">
-				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor">
+				<img src="<?php echo base_url();?>assets/images/Logo_ipb.png" alt="" class="img_sponsor">
+			</div>
+			<div class="sponsor">
+				<img src="<?php echo base_url();?>assets/images/Logo_SBRC.png" alt="" class="img_sponsor">
 			</div>
 			<div class="sponsor">
 				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor">
 			</div>
+		<!-- <div class="sponsore_title">Sponsored By:</div> -->
+<!-- 			<div class="sponsor">
+				<img src="<?php echo base_url();?>assets/images/Logo_ipb.png" alt="" class="img_sponsor">
+			</div>
+			<div class="sponsor">
+				<img src="<?php echo base_url();?>assets/images/Logo_SBRC.png" alt="" class="img_sponsor">
+			</div>
 			<div class="sponsor">
 				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor">
-			</div>
-			<div class="sponsore_title">Co Organization By:</div>
-			<div class="sponsor">
-				<img src="<?php echo base_url();?>assets/images/Ristekdikti_logo.jpg" alt="" class="img_sponsor">
-			</div>
-			<div class="sponsor">
-				<img src="<?php echo base_url();?>assets/images/Ristekdikti_logo.jpg" alt="" class="img_sponsor">
-			</div>
-			<div class="sponsor">
-				<img src="<?php echo base_url();?>assets/images/Ristekdikti_logo.jpg" alt="" class="img_sponsor">
-			</div>
+			</div> -->
 		</div>

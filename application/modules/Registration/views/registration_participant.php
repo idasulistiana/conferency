@@ -83,7 +83,7 @@
 				 	<div class="col-sm-4">
 				 		<label for="inputLastName">City</label>
 				    </div>
-				    <div class="col-sm-2 col-md-2 col-xs-2">
+				    <div class="col-sm-3 col-md-3 col-xs-3">
 				    	<input type="text" class="form-control" name="city" id="city" placeholder="City" required>
 				    </div>
 				 </div>
@@ -94,7 +94,7 @@
 					<div class="col-sm-4">
 				 		<label for="inputLastName">State</label>
 				   	</div>
-				    <div class="col-sm-2 col-md-2 col-xs-2">
+				    <div class="col-sm-3 col-md-3 col-xs-3">
 				    	<input type="text" class="form-control" name="state" id="state" placeholder="State" required>
 				    </div>
 				</div>
@@ -105,7 +105,7 @@
 					<div class="col-sm-4">
 						<label for="selectCountry" >Country <span class="note">*</span></label>
 					</div>
-				    <div class="col-sm-2 col-md-2 col-xs-2">
+				    <div class="col-sm-3 col-md-3 col-xs-3">
 				    	<select class="form-control" name="country" id="country" required>
 				        	<option selected="selected" value="">Select country</option>
 				            <option value="United States">United States</option>
@@ -360,7 +360,7 @@
 					<div class="col-sm-4">
 						<label for="inputEmail" >Email <span class="note">*</span></label>
 					</div>
-					<div class="col-sm-2 col-md-2 col-xs-2">
+					<div class="col-sm-3 col-md-3 col-xs-3">
 						<input type="email" class="form-control" name="email" id="email" placeholder="Your email" required>
 					</div>
 				</div>
@@ -371,7 +371,7 @@
 					<div  class="col-sm-4">
 						<label for="inputPhoneNumber">Phone Number <span class="note">*</span></label>
 					</div>
-					<div class="col-sm-2 col-md-2 col-xs-2">
+					<div class="col-sm-3 col-md-3 col-xs-3">
 						<input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" maxlength="20" required pattern="^([\+][0-9]{1,3}[\ \.\-])?([\(]{1}[0-9]{2,6}[\)])?([0-9\ \.\-\/]{3,20})((x|ext|extension)[\ ]?[0-9]{1,4})?$">
 					</div>
 				</div>
