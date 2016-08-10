@@ -35,6 +35,8 @@
 					$this->load->view('home_audience');
 				}else if ($content_view=='organization'){
 					$this->load->view('organization');
+				}else if ($content_view=='confirm'){
+					$this->load->view('confirm');
 				}
 			?>
 			
