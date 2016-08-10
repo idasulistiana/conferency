@@ -37,10 +37,20 @@
 .login_body{
 	background-color: #f2f2f2;
 }
-.login_conference{
-	    margin: auto;
-    margin-top: 180;
-    margin-left: 480px;
+.login_body .login_conference{
+    background-color: #a1a1a1;
+    /* margin-right: auto; */
+    color: #fff;
+    padding-top: 1;
+    margin: auto;
+    float: none;
+    margin: 0 auto;
+    margin-top: 170px;
+    padding-bottom: 1;
+    box-shadow: 7px 4px #bebfc3;
+}
+.login_body .login_conference h3{
+	text-align: center;
 }
 
 #header {
@@ -1726,7 +1736,7 @@ a.bottom.carousel-control{
 	height:121px;
 }
 .benner .top_benner{
-	width: 1023px;
+	/*width: 1023px;*/
     margin: 0 auto;
 }
 /*=================sponsor.CSS===============*/

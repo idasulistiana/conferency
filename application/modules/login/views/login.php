@@ -8,8 +8,8 @@
   <!-- <div class="body_login"> -->
     <!-- <div id="body"> -->
       	<!-- <div class="content"> -->
-        <div class="col-sm-12">
-        	<div class="col-md-3 col-sm-8 col-xs-6 login_conference">
+        <!-- <div class="col-sm-12"> -->
+        	<div class="col-md-3 col-sm-5 col-xs-5 login_conference">
           	<h3>Login</h3>
             	<form method="POST" action="<?php echo site_url('Login/plogin') ?>">
             		<div class="form-group">
@@ -31,7 +31,7 @@
                       <button type="submit" class="btn btn-primary pull-right">Login</button>
                       <br><br>
             	</form>
-              </div>
+              <!-- </div> -->
         	<!-- </div> -->
       	<!-- </div> -->
     <!-- </div> -->

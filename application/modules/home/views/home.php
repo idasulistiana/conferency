@@ -38,22 +38,22 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" >
 					    <div class="item active">
-					      <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker">
-					    	<span class="title_img_soponsor"><b>Emily William</b><br>
-					    	Indonesia University</span>
+					      <!-- <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker"> -->
+					    	<span class="title_img_soponsor"><b>Prof. Dr. Herry Suhardiyanto</b><br>
+					    	Rector of Bogor Agricultural University-Indonesia</span>
 					    </div>
 					    <div class="item">
-					      <img src="<?php echo base_url(); ?>assets/images/harrison.jpg" alt="Chania" class="img_speaker">
+					      <!-- <img src="<?php echo base_url(); ?>assets/images/harrison.jpg" alt="Chania" class="img_speaker"> -->
 					 		<span class="title_img_soponsor"><b>John William</b><br>
 					    	 Bogor Agricultural University</span>
 					    </div>
 					     <div class="item">
-					      <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker">
+					      <!-- <img src="<?php echo base_url(); ?>assets/images/emily.jpg" alt="Chania" class="img_speaker"> -->
 					    	<span class="title_img_soponsor"><b>Jefferson</b><br>
 					    	 Bogor Agricultural University</span>
 					    </div>
 					    <div class="item">
-					      <img src="<?php echo base_url(); ?>assets/images/harrison.jpg" alt="Chania" class="img_speaker">
+					      <!-- <img src="<?php echo base_url(); ?>assets/images/harrison.jpg" alt="Chania" class="img_speaker"> -->
 					    	 <span class="title_img_soponsor"><b>Frank</b><br>
 					    	Indonesia University</span>
 					    </div> 
