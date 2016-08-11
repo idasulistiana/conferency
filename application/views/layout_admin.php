@@ -16,8 +16,10 @@
 		}else if ($content_view == 'padmin'){
 			$data['payment'] = $presenter;
 			$this->load->view('payment_admin', $data);
-		}else if ($content_view == 'data_rundown'){
-			$this->load->view('data_rundown');
+		}else if ($content_view == 'rundown'){
+			$data['rundown1'] = $rundown1;
+			$data['rundown2'] = $rundown2;
+			$this->load->view('rundown', $data);
 		}
 	?>
 	</body>
@@ -42,4 +44,20 @@
       var btn = $(this);
       btn.button('loading');
   });
+    <?php if($content_view== 'rundown'){ ?>
+    	function ubah(x){
+    		var xhttp;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    $("#pres").html(xhttp.responseText);
+                    $('#id').val(x);
+                }
+            };
+            var c1 = $('#c1_'+x).val();
+            var c2 = $('#c2_'+x).val();
+            xhttp.open("GET", "<?php echo site_url() ?>admin_dashboard/list_speaker/"+$('#c1_'+x).val()+";"+$('#c2_'+x).val(), true);
+            xhttp.send();
+    	}
+    <?php } ?>
   </script>

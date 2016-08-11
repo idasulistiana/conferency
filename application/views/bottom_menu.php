@@ -13,13 +13,15 @@
 				<li <?php if ($this->uri->segment(1)=='venue_hospitally') echo 'class="active"'?>>
 					<a href="<?php echo site_url() ?>venue_hospitally">Venue & Hospitality</a>
 				</li>
-				<li <?php if ($this->uri->segment(1)=='awards') echo 'class="active"'?>>
-					<a href="<?php echo site_url() ?>awards">Awards</a>
+				<li <?php if ($this->uri->segment(1)=='Abstract_web') echo 'class="active"'?>>
+					<a href="<?php echo site_url('Abstract_web') ?>">Abstract</a>
 				</li>
-				<li <?php if ($this->uri->segment(1)=='sponsor') echo 'class="active"'?>>
-					<a href="<?php echo site_url() ?>sponsor">Sponsor</a>
-				</li>
+				<li class="<?php if ($this->uri->segment(1)=='Registration') echo ' active'?>">
+					<a  href="<?php echo site_url('Registration') ?>">Registration</a>
 
 			</ul>
+			<p class="pull-right">
+				Under Construction 
+			</p>
 		</div>
 	</div>

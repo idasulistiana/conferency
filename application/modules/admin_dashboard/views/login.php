@@ -11,7 +11,10 @@
         <!-- <div class="col-sm-12"> -->
         	<div class="col-md-3 col-sm-5 col-xs-5 login_conference">
           	<h3>Login</h3>
-            	<form method="POST" action="<?php echo site_url('Admin_dashboard/plogin') ?>">
+            <?php if($this->session->flashdata('error')){ ?>
+                <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;<?php echo $this->session->flashdata('error'); ?></div>
+            <?php } ?>
+            	<form method="POST" action="<?php echo site_url('admin_dashboard/plogin') ?>">
             		<div class="form-group">
                         <div class="input-group">
                           <div class="input-group-addon">

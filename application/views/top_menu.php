@@ -34,7 +34,7 @@
 			<div class="clearfix"></div>
 			<ul class="line_top_menu">
 				<?php if($this->session->userdata('status') == ""){ ?>
-				<li <?php if ($this->uri->segment(1)=='Home') echo 'class="active selected"'?>>
+				<li <?php if ($this->uri->segment(1)=='Home' || $this->uri->segment(1)=='') echo 'class="active selected"'?>>
 					<a href="<?php echo site_url('Home') ?>">Home</a>
 				</li>
 				<li <?php if ($this->uri->segment(1)=='About_us') echo 'class="active"'?>>
@@ -45,14 +45,6 @@
 				</li>
 				<li class="<?php if ($this->uri->segment(1)=='Registration') echo ' active'?>">
 					<a  href="<?php echo site_url('Registration') ?>">Registration</a>
-						<!-- <ul class="dropdown-menu">
-							<li class="col-sm-12">
-								<a href="<?php echo site_url() ?>Registration" >Registration Presenter</a>
-							</li>
-							<li class="col-sm-12">	
-								<a href="<?php echo site_url() ?>Registration/participant"> Registration Participants</a>
-							</li>
-						</ul> -->
 				</li>
 				<li <?php if ($this->uri->segment(1)=='technical_program') echo 'class="active"'?> class="dropdown">
 					<a  href="<?php echo site_url('technical_program') ?>" data-toggle="dropdown">Technical Program</a>

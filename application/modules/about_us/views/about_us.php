@@ -19,7 +19,7 @@
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
 				      <h4 class="panel-title">
-				        <a data-toggle="collapse" href="#collapse2">Conference</a>
+				        <a data-toggle="collapse" href="#collapse2">Committe</a>
 				      </h4>
 				    </div>
 				    <div id="collapse2" class="panel-collapse collapse">

@@ -40,6 +40,13 @@
 					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
 						Prof. Dr. Herry Suhardiyanto
 					</div>
+					<div class="col-sm-4 col-md-4 col-xs-4" style="padding: 5px">
+						Vice Rector of IPB
+					</div>
+					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
+					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
+						Prof. Dr. Ir. Anas M Fauzi, M. Eng
+					</div>
 					<div class="clearfix"></div>
 					<div class="col-sm-4 col-md-4 col-xs-4" style="padding: 5px">
 						President Director of BPDPKS
@@ -55,6 +62,13 @@
 					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
 					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
 						Prof. Dr. Erliza Hambali	
+					</div>
+					<div class="col-sm-4 col-md-4 col-xs-4" style="padding: 5px">
+						Biomass Resources and Conversion Technology - Villanova University
+					</div>
+					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
+					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
+						Dr. Justinus Satrio
 					</div>
 					<div class="clearfix"></div>
 					<h4><b>Committee:</b></h4>
@@ -87,7 +101,7 @@
 					</div>
 					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
 					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
-						Dr. Mujizat Kawaroe, Dr. Ika Amalia, Ms. Nelly Muna
+						Dr. Mujizat Kawaroe; Dr. Ika Amalia; Ms. Nelly Muna
 					</div>
 					<div class="clearfix"></div>
 					<div class="col-sm-4 col-md-4 col-xs-4" style="padding: 5px">
@@ -95,7 +109,7 @@
 					</div>
 					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
 					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px;">
-						Prof. Dr. Ani Suyani, Dr. Eng Uju, Ms. Rista Fitria
+						Prof. Dr. Ani Suyani; Dr. Eng Uju; Dr. Herdhata Agusta; Dr. Hariyadi; Rista Fitria, STP
 					</div>
 					<div class="clearfix"></div>
 					<div class="col-sm-4 col-md-4 col-xs-4" style="padding: 5px">
@@ -103,7 +117,7 @@
 					</div>
 					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
 					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
-						Dr. Yandra Arkeman, Ari Imam Sutanto
+					  Dr. Yandra Arkeman; Prof. Dadang, Dr. Aris Purwanto; Vonny Indah Sari, MSi
 					</div>
 					<div class="clearfix"></div>
 					<div class="col-sm-4 col-md-4 col-xs-4" style="padding: 5px">
@@ -111,7 +125,7 @@
 					</div>
 					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
 					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
-						Dr. Mira Rivai, Agatha Maria Gadi
+						Dr. Mira Rivai; Agatha M. Gadi, ST Shaeful Firmansyah, SSi;  Ari Imam Sutanto, Msi
 					</div>
 					<div class="clearfix"></div>
 					<div class="col-sm-4 col-md-4 col-xs-4" style="padding: 5px">
@@ -119,7 +133,8 @@
 					</div>
 					<div class="col-sm-1 col-md-1 col-xs-1" style="padding: 5px 0px;">:</div>
 					<div class="col-sm-7 col-md-7 col-xs-7" align="justify" style="padding: 5px">
-						Athin Nuryanti, Hendri Wijaya, Fifin N. Nisya
+						Dr. Siti Nikmatin; Athin Nuryanti, STP; Hendri  Wijaya, MSi; Fifin N.Nisya, MSi; 
+
 					</div>
 					<div class="clearfix"></div>
 				</span>

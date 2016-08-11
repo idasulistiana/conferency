@@ -2,7 +2,7 @@
       <div class="templatemo-content-wrapper">
         <div class="templatemo-content">
           <ol class="breadcrumb">
-            <li><a href="<?php echo site_url('Admin_dashboard') ?>">Dashboard</a></li>
+            <li><a href="<?php echo site_url('admin_dashboard') ?>">Dashboard</a></li>
             <li class="active">Data Payment</li>
           </ol>
           
@@ -30,7 +30,7 @@
                         <td><?php echo $data->fname." ".$data->lname ?></td>
                         <td><?php echo $data->company ?></td>
                         <td><?php echo $data->email ?></td>
-                        <td><?php echo $data->jml ?></td>
+                        <td><?php echo $data->satuan ?> <?php echo $data->jml ?></td>
                         <td><?php echo $data->bank ?></td>
                         <td><?php echo $data->a_name ?></td>
                         <td><?php echo $data->a_number ?></td>

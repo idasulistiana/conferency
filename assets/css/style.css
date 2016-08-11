@@ -1740,7 +1740,7 @@ a.bottom.carousel-control{
 	font-family: Rockwell;
     font-size: 26px;
     font-weight: bold;
-    color: #f2f2f2;
+    color: #111111;
 
 }
 /*=================sponsor.CSS===============*/
@@ -1749,7 +1749,7 @@ a.bottom.carousel-control{
 }
 .img_sponsor1{
     margin: 0 auto;
-    margin-top: 67px;
+    margin-top: 10;
     margin-left: 0 auto;
     width: 266px;
     padding: 0;
@@ -1765,10 +1765,11 @@ a.bottom.carousel-control{
 	margin: 0 auto;
 }
 .text_venue{
-	font-weight: bold;
-    font-family: open-sans;
     font-size: 18px;
+    line-height: 1.5;
+    color: #111111;
     text-align: center;
+    font-weight: bold;
 }
 #body .body .section  h2 {
      text-align: center;

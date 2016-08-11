@@ -4,8 +4,6 @@
 		<div class="section">
 			<img src="<?php echo base_url();?>assets/images/logo_hotelsalak.png" class="img_hotelsalak">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi. Donec felis nunc, placerat quis varius quis, posuere sed velit. In convallis pulvinar rutrum. Suspendisse nec mi lectus, at fermentum felis.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in vestibulum mi. Donec felis nunc, placerat quis varius quis, posuere sed velit. In convallis pulvinar rutrum. Suspendisse nec mi lectus, at fermentum felis.
 			</p>
 			<span class="text_venue">
 				The international conference will be held:<br/>

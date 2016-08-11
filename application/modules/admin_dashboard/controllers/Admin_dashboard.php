@@ -7,6 +7,7 @@ class Admin_dashboard extends CI_Controller {
         parent::__construct();
 		$this->load->model('Speaker_m');
 		$this->load->model('Login_m');
+		$this->load->model('Rundown_m');
 		$this->load->model('Payment_m');
 		/*$this->load->helper('datatable_helper');*/
       	error_reporting(~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);     
@@ -49,13 +50,15 @@ class Admin_dashboard extends CI_Controller {
 		$this->Login_m->setPass($this->input->post('psw'));
 		$log = $this->Login_m->login();
 		echo $this->input->post('user');
-		if($log->status == "")
-			redirect(site_url('Login'));
+		if($log->status == ""){
+			$this->session->set_flashdata('error', 'Wrong username and password');
+			redirect(site_url('admin_dashboard'));
+		}
 		else{
 			$this->session->set_userdata('username',$log->username);
 			$this->session->set_userdata('status',$log->status);
 			$this->session->set_userdata('ket',$log->ket);
-			redirect(site_url('Admin_dashboard'));
+			redirect(site_url('admin_dashboard'));
 		}
 	}
 	public function list_data_presenter(){
@@ -73,9 +76,28 @@ class Admin_dashboard extends CI_Controller {
 			$this->Payment_m->setId($id);
 			$this->Payment_m->updatePayment();
 			$this->Payment_m->update1($x,$id1);
-			redirect(site_url('Admin_dashboard/payment'));
+			redirect(site_url('admin_dashboard/payment'));
 		}else
 			$this->load->view('login');
+	}
+	public function rundown(){
+		if($this->session->userdata('status') == 1){
+			$data['content_view']='rundown';
+			$data['rundown1'] = $this->Rundown_m->lihat('2016-10-10');
+			$data['rundown2'] = $this->Rundown_m->lihat('2016-10-11');
+			$this->load->view('layout_admin',$data);
+		}else
+			$this->load->view('login');
+	}
+	public function list_speaker($x){
+		$row_data = explode(';', $x);
+		$a = $row_data[0];
+        $b = $row_data[2];
+		echo "<select name='presenter' id='presenter' class='form-control'>";
+		foreach ($this->Speaker_m->lihatByCat($a, $b) as $rows) {
+			echo "<option value='".$rows->id_speaker."'>".$rows->fname." ".$rows->lname."</option>";
+		}
+		echo "</select>";
 	}
 }
 ?>

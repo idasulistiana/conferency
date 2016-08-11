@@ -2,7 +2,7 @@
       <div class="templatemo-content-wrapper">
         <div class="templatemo-content">
           <ol class="breadcrumb">
-            <li><a href="<?php echo site_url('Admin_dashboard') ?>">Dashboard</a></li>
+            <li><a href="<?php echo site_url('admin_dashboard') ?>">Dashboard</a></li>
             <li class="active">Data Participant</li>
           </ol>
           

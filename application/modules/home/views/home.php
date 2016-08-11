@@ -6,8 +6,8 @@
 				<ul>
 					<p>
 					<span class="font_red"> </span><br/>
-					<span class="text_benner">Monday-Tuesday, October 10 - 11th 2016<br/>
-					Salak Tower Hotel, Bogor Indonesia</span>
+					<span class="text_benner">Monday-Tuesday, October 10 - 11<sup>th</sup> 2016<br/>
+					Salak Tower Hotel, Bogor - Indonesia</span>
 					</p>
 				</ul>
 			</div>
@@ -30,16 +30,20 @@
 					<h2 >Speakers</h2>
 						<marquee direction=up class="marquee">
 						<p align="center"><font size="3">
-							<span class="bold">Ir. Rida Mulyana, MSc</span><br>
+							<span class="bold">Prof. Dr. Herry Suhardiyanto</span><br/>
+							Rector of Bogor Agricultural University<br/>
+							Indonesia<br/><br/>
+
+							<!-- <span class="bold">Ir. Rida Mulyana, MSc</span><br>
 							Ministry of Energy and Mineral Resources
-							Indonesia <br><br>
+							Indonesia <br><br> -->
 
 							<span class="bold">Dr. Bayu Krisnamurthi</span><br/>
 							President Director of Indonesia Estate Crop Fund-Palm Oil
 							Indonesia<br><br> 
 							
 							<span class="bold">Assoc. Prof. Dr. Justinus Satrio</span><br/>
-							sustainability. Biomass Resources and Convertion Technologies Laboratory-BRCT
+							Biomass Resources and Convertion Technologies Laboratory-BRCT<br/>
 							Villanova University, USA <br><br>
 
 							<span class="bold">Japan International Research Center for Agricultural Sciences (JIRCAS)</span><br/>
@@ -53,11 +57,11 @@
 							Head of Indonesia Association of Bioenergy Scientist and Technologies (IABEST) 
 							Indonesia<br><br>
 
-							<span class="bold">Dr. Bonar Marbun<br/>
+							<span class="bold">Dr. Bonar Marbun</span><br/>
 							Bandung Institute of Technology 
 							Indonesia<br><br>
 
-							<span class="bold">Prof. Dr. Pudji Permadi<br/>
+							<span class="bold">Prof. Dr. Pudji Permadi</span><br/>
 							Bandung Institute of Technology
 							Indonesia<br><br>
 
