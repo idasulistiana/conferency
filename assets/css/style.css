@@ -90,10 +90,11 @@
 	padding: 0;
 }
 #header .line_top_menu {
-	background: url(../images/bg-navigation1.gif) repeat-x bottom left;
-	padding: 28px 0 0;
-	text-align: center;
-	width: 939px;
+    border-bottom: solid #ce8754;
+    /* background: url(../images/bg-navigation1.gif) repeat-x bottom left; */
+    padding: 28px 0 0;
+    text-align: center;
+    width: 939px;
     margin-left: 10;
 }
  .menu-register{
@@ -106,24 +107,29 @@
 	padding: 0;
 }
 #header ul li a {
-	color: #797979;
-	display: inline-block;
-	font-family: 'Arapey';
-	font-size: 16px;
-	font-weight: normal;
-	margin: 0;
-	padding: 12px;
-	text-decoration: none;
-	text-transform: uppercase;
+    color: #797979;
+    display: inline-block;
+    /* font-family: Open-sans; */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #111111;
+    padding: 12px;
+    /* text-decoration: none; */
+    text-transform: uppercase;
 }
 
 #header ul li.active > a {
-	background: url(../images/bg-menu1.gif) repeat-x bottom left;
-	color: #ef414a;
+	/*background: url(../images/bg-menu1.gif) repeat-x bottom left;*/
+	color: #66cc33;
+}
+#header ul li.active{
+	list-style-position: inside;
+    border-bottom: 6px solid #66cc33;
 }
 #header ul li a:hover {
-	color: #ef414a;
-	display: block;
+	color: #ff9306;
+    display: block;
 }
 #header .header_body .col-sm-12{
 	padding: 0px;
@@ -189,7 +195,7 @@
     border-left: 1px solid #cecece;
     padding: 0;
     position: absolute;
-    width: 960px;
+    width: 941px;
 }
 #body .header div ul .font_red{
 	color: #ef414a;
@@ -233,12 +239,12 @@
 	color: #fff;
 }
 #body .body {
-	background: #f2f2f2 url(../images/border-bottom.gif) repeat-x bottom left;
+	background: #fff url(../images/border-bottom.gif) repeat-x bottom left;
 	margin: 0;
 	padding: 0 0 20px;
 }
 #body .body .section {
-	background: url(../images/bg-aside.gif) repeat-y right top;
+	/*background: url(../images/bg-aside.gif) repeat-y right top;*/
 	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
@@ -254,14 +260,14 @@
 
 }
 #body .body .section .article h2 {
-    clear: both;
-    color: #ef414a;
-    font-family: 'Arapey';
-    font-size: 24px;
+    /* clear: both; */
+    color: #ff9306;
+    font-family: Rockwell;
+    font-size: 21px;
     font-weight: normal;
     margin: 0;
     margin-top: -12;
-    padding: 0 0 22px;
+    padding: 0 0 28px;
 }
 #body .body .section .article img {
 	display: block;
@@ -299,7 +305,7 @@
     overflow: hidden;
     padding-bottom: 11px;
     /* padding: 43px 0 39px; */
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
     width: 320px;}
 #body .body .section .aside > a {
 	color: #797979;
@@ -350,14 +356,19 @@
 	padding-bottom:20px;
 }
 #body .footer .sponsor {
-	background: #fff;
-	border: 1px solid #cdcdcd;
-	border-radius: 6px;
-	float: left;
-	margin-top: 40px;
-	padding: 30;
-	width: 298px;
-	margin-left: 15;
+    background: #fbf3dc;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    margin-left: 13px;
+    float: left;
+    text-align: center;
+    margin-top: 40px;
+    /* padding: 30; */
+    width: 298px;
+    /* margin: 0 auto; */
+    height: 285px;
+    /* margin-left: 15; */
+}
 }
 #body .footer .sponsore_title{
 	color: #ef414a;
@@ -434,13 +445,14 @@
 	padding-bottom: 15px;
 }
 #body h2 {
-	color: #ef414a;
-	font-family: 'Arapey';
-	font-size: 24px;
-	font-weight: normal;
-	margin: 0;
-	padding: 0 0 21px;
-	text-transform: capitalize;
+    color: #ff9306;
+    font-family: Rockwell;
+    font-size: 21px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2;
+    padding: 0 0 21px;
+    text-transform: capitalize;
 }
 #body .content #section > p {
 	font-size: 17px;
@@ -1580,9 +1592,9 @@
 	font-size: 11px;
 }
 #footer {
-	background: url(../images/bg-footer1.jpg) repeat-x top left;
-	margin: 0;
-	padding: 23px 0 21px;
+    margin: 0;
+    background-color: #ff9306;
+    padding: 23px 0 21px;
 }
 #footer div {
 	margin: 0 auto;
@@ -1695,10 +1707,8 @@
 .carousel.vertical .active.right  { top:  100%; }
 .carousel.vertical .prev,
 .carousel.vertical .active.left   { top: -100%; }       
-.img_sponsor{
-	margin:0 auto;
-	width:400px;
-}
+
+
 a.top.carousel-control{
 	bottom:auto;
 	color: red;
@@ -1709,39 +1719,40 @@ a.bottom.carousel-control{
 	color:red;
 	width:98%;
 }
-.benner .img_logo_sbrc{
-    float: left;
-    width: 227px;
-    margin-right: 0;
-    margin-top: 4px;
-}
-.benner .img_logo_ipb{
-    float: right;
-    width: 85px;
-    margin-top: -36px;
-}
-.benner .title_sbrc{
-	font-size: 27px;
-    margin-top: 10;
-    color: #fff;
 
-}
-.benner .title_ipb{
-    font-size: 28px;
-    letter-spacing: 6.3;
-    color: #fff;
-}
 .benner{
-	background: url(../images/bg-header1.png) no-repeat top center;
-	height:121px;
+	
 }
 .benner .top_benner{
-	/*width: 1023px;*/
+    /* width: 1023px; */
     margin: 0 auto;
+    /* width: 1185px; */
+    height: 93px;
+    /* background-color: red; */
+    background-color: #ff9306;
+    border-radius: 0 0 748px 748px;
+    padding-top:6px;
+
+
+}
+.benner .top_benner .text_title{
+	/*background: url(../images/text_title.png) no-repeat top center;*/
+	font-family: Rockwell;
+    font-size: 26px;
+    font-weight: bold;
+    color: #f2f2f2;
+
 }
 /*=================sponsor.CSS===============*/
 .img_sponsor{
-	width:234px;
+	margin-top: 33px;
+}
+.img_sponsor1{
+    margin: 0 auto;
+    margin-top: 67px;
+    margin-left: 0 auto;
+    width: 266px;
+    padding: 0;
 }
 .img_speaker{
     width: 179px;
@@ -1782,13 +1793,14 @@ a.bottom.carousel-control{
 #body .body .section .aside  #myCarousel .carousel-inner .item span b {
 	color:#111111;
 	padding: 2;
+
 }
 div.coorganize_title.col-sm-12{
     margin-top: 30;
-    font-size: 24;
-    color: #ef414a;
-    font-family: 'Arapey';
-    padding: 0;
+	color: #ff9306;
+    font-family: Rockwell;
+    font-size: 21px;
+    font-weight: normal
 }
 .top_benner{
 	text-align: center;
@@ -1799,3 +1811,12 @@ div.coorganize_title.col-sm-12{
 	letter-spacing:2;
 	color:#111111;
 	font-weight:bold;
+}
+.marquee{
+	margin-top: 36px;
+    height: 224px;
+    /*font-size:13px;*/
+}
+.marquee p .bold{
+	font-weight: bold;
+}

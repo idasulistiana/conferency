@@ -1,9 +1,12 @@
 <div class="col-sm-12 benner">
-	<div class="top_benner">
-		<!-- <img src="<?php echo base_url()?>assets/images/Logo_SBRC.png" class="img_logo_sbrc"> -->
+		<div class="top_benner">
+				<div class="text_title"> INTERNATIONAL CONFERENCE ON BIOMASS: <br>
+				Technology, Aplication, and Sustainable Development
+	<!-- <img src="<?php echo base_url()?>assets/images/Logo_SBRC.png" class="img_logo_sbrc"> 
 		<span class="title_sbrc">INTERNATIONAL CONFERENCE ON BIOMASS<br></span>
 		<span class="title_ipb">Technology, Application and Sustainable Development</span>
 		<!-- <img src="<?php echo base_url()?>assets/images/Logo_ipb.png" class="img_logo_ipb"> -->
+			</div>
 	</div>
 </div>
 
@@ -31,7 +34,7 @@
 			<div class="clearfix"></div>
 			<ul class="line_top_menu">
 				<?php if($this->session->userdata('status') == ""){ ?>
-				<li <?php if ($this->uri->segment(1)=='Home') echo 'class="active"'?>>
+				<li <?php if ($this->uri->segment(1)=='Home') echo 'class="active selected"'?>>
 					<a href="<?php echo site_url('Home') ?>">Home</a>
 				</li>
 				<li <?php if ($this->uri->segment(1)=='About_us') echo 'class="active"'?>>
