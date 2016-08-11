@@ -61,5 +61,69 @@
 			$this->db->where('username', $this->session->userdata('username'));
 			return $this->db->update('tbl_speaker', $data);
 		}
+		/*public function list_data_presenter(){
+			$data['aColumns'] = array(
+								'id_speaker AS id_speaker', 
+								'1 AS no', 
+								'title AS title',
+								'fname AS fname',
+								'lname AS lname',
+								'company AS company',
+								'city AS city',
+								'state AS state',
+								'country AS country',
+								'email AS email',
+								'phone AS phone',
+								'address AS address',
+								'abstract_category AS category',
+								'title_speech AS speech',
+								'abstract_file AS afile',
+								'status_bayar AS bayar'
+							);
+			$data['sIndexColumn'] 	= "id_speaker";
+			$data['sTable'] 		= "tbl_speaker";
+			
+			$Columns 	= array( 'id', 'no', 'fname', 'company','category', 'speech', 'afile', 'city', 'state', 'country', 'email', 'phone', 'address', 'bayar');
+			$ret 			= data_table($data,$_REQUEST);
+			$sQ 			= $ret['sQ'];
+			$output 	= $ret['output'];
+			$no = 0;
+			foreach($sQ->result_array() as $aRow) {
+				$row 	= array();
+				for ( $i=0 ; $i<count($data['aColumns']) ; $i++ ) {
+					if($Columns[$i] == 'no'){
+						$aRow['no'] = $no+1;
+					}
+					if($Columns[$i] == 'fname'){
+						$aRow['fname'] = $aRow['title']." ".$aRow['fname']." ".$aRow['lname'];
+					}
+					if($Columns[$i] == 'bayar'){
+						if($aRow['bayar'] == 1)
+							$aRow['bayar'] = 'Done';
+						else
+							$aRow['bayar'] = 'Pending'; 
+					}
+					if($Columns[$i] == 'afile')
+						$aRow['afile'] = '<a href="'.base_url().'assets/uploads/pdf/'.$aRow['afile'].'">Download</a>';
+					$row[] = $aRow[ $Columns[$i] ];	
+				}
+				$output['aaData'][] = $row;
+				$no++;
+			}
+			
+			return $output;
+		}*/
+		public function lihat(){
+			$this->db->select('*')->from('tbl_speaker');
+			return $this->db->get()->result();
+		}
+		public function lihatParticipant(){
+			$this->db->select('*')->from('tbl_participant');
+			return $this->db->get()->result();
+		}
+		public function lihatPayment(){
+			$this->db->select('*')->from('tbl_pembayaran')->where('status', 0);
+			return $this->db->get()->result();
+		}
 	}
 ?>

@@ -5,12 +5,77 @@ class Admin_dashboard extends CI_Controller {
 	function __construct(){
         // Call the Model constructor
         parent::__construct();
-     
+		$this->load->model('Speaker_m');
+		$this->load->model('Login_m');
+		$this->load->model('Payment_m');
+		/*$this->load->helper('datatable_helper');*/
+      	error_reporting(~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);     
     }
 	function index()
-	{	
-		$data['content_view']='admin_dashboard';
-		$this->load->view('layout_admin',$data);
+	{
+		if($this->session->userdata('status') == 1){
+			/*$data['content_view']='admin_dashboard';
+			$this->load->view('layout_admin',$data);*/
+			$this->participant();
+		}else
+			$this->load->view('login');
+	}
+	public function presenter(){
+		if($this->session->userdata('status') == 1){
+			$data['content_view']='presenter';
+			$data['presenter'] = $this->Speaker_m->lihat();
+			$this->load->view('layout_admin',$data);
+		}else
+			$this->load->view('login');
+	}
+	public function participant(){
+		if($this->session->userdata('status') == 1){
+			$data['content_view']='participant';
+			$data['presenter'] = $this->Speaker_m->lihatParticipant();
+			$this->load->view('layout_admin',$data);
+		}else
+			$this->load->view('login');
+	}
+	public function payment(){
+		if($this->session->userdata('status') == 1){
+			$data['content_view']='padmin';
+			$data['presenter'] = $this->Speaker_m->lihatPayment();
+			$this->load->view('layout_admin',$data);
+		}else
+			$this->load->view('login');
+	}
+	public function plogin(){
+		$this->Login_m->setUsername($this->input->post('user'));
+		$this->Login_m->setPass($this->input->post('psw'));
+		$log = $this->Login_m->login();
+		echo $this->input->post('user');
+		if($log->status == "")
+			redirect(site_url('Login'));
+		else{
+			$this->session->set_userdata('username',$log->username);
+			$this->session->set_userdata('status',$log->status);
+			$this->session->set_userdata('ket',$log->ket);
+			redirect(site_url('Admin_dashboard'));
+		}
+	}
+	public function list_data_presenter(){
+		$output = $this->Speaker_m->list_data_presenter();
+		echo json_encode($output);
+	}
+	public function logout(){
+		$this->session->sess_destroy();
+	    redirect(site_url());
+	}
+	public function confirm_payment($x){
+		if($this->session->userdata('status') == 1){
+			$id = $this->uri->segment(4);
+			$id1 = $this->uri->segment(5);
+			$this->Payment_m->setId($id);
+			$this->Payment_m->updatePayment();
+			$this->Payment_m->update1($x,$id1);
+			redirect(site_url('Admin_dashboard/payment'));
+		}else
+			$this->load->view('login');
 	}
 }
 ?>
