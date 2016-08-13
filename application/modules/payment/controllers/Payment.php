@@ -25,11 +25,12 @@ class Payment extends CI_Controller {
 		$this->Payment_m->setANumber($this->input->post('anum'));
 		$this->Payment_m->setMessage($this->input->post('message'));
 		$this->Payment_m->setIdStatus($this->input->post('category'));
+		$this->Payment_m->setSatuan($this->input->post('satuan'));
 		$regis = $this->Payment_m->cek_idregis();
 		if($regis){
 			$this->Payment_m->setIdRegis($regis);
 			$this->Payment_m->tambah();
-			$this->session->set_flashdata('sukses', 'Thanks for the confirmation of your payment. We will immediately process it. <br> For more information please contact us at icbbogor2016@gmail.com');
+			$this->session->set_flashdata('sukses', 'Thank you. For more information please contact us at icbbogor2016@gmail.com');
 		}else{
 			$this->session->set_flashdata('error', 'You must registration before!');
 			$this->session->set_flashdata('fName', $this->input->post('fName'));
@@ -42,6 +43,7 @@ class Payment extends CI_Controller {
 			$this->session->set_flashdata('anum',$this->input->post('anum'));
 			$this->session->set_flashdata('message',$this->input->post('message'));
 			$this->session->set_flashdata('category',$this->input->post('category'));
+			$this->session->set_flashdata('satuan',$this->input->post('satuan'));
 		}
 		redirect(site_url('payment'));
 	}

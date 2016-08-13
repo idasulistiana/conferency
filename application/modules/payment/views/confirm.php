@@ -2,12 +2,12 @@
 	<div class="content">
 		<h2 align="center"><br>Payment Confirmation</h2>
 	<?php if($this->session->flashdata('error')){ ?>
-			<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;<?php echo $this->session->flashdata('error'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+			<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>&nbsp;<?php echo $this->session->flashdata('error'); ?></div>
 	<?php } ?>
 	<?php if($this->session->flashdata('sukses')){ ?>
 		<div class="col-sm-1"></div>
 		<div class="col-sm-10">
-			<div class="alert alert-success" role="alert" align="center"><span class="sr-only">Success:</span>&nbsp;<?php echo $this->session->flashdata('sukses'); ?><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+			<div class="alert alert-success" role="alert" align="center"><span class="sr-only">Success:</span>&nbsp;<?php echo $this->session->flashdata('sukses'); ?></div>
 		</div>
 		<div class="col-sm-1"></div>
 		<div class="clearfix"></div>
@@ -108,8 +108,14 @@
 					<div  class="col-sm-4">
 						<label for="inputPhoneNumber">Amount <span class="note">*</span></label>
 					</div>
+					<div class="col-sm-2 col-md-2 col-xs-2">
+						<select name="satuan" id="satuan" class="form-control">
+							<option value="$" <?php if($this->session->flashdata('satuan') == '$') echo "selected"; ?>>$</option>
+							<option value="Rp" <?php if($this->session->flashdata('satuan') == 'Rp') echo "selected"; ?>>Rp</option>
+						</select>
+					</div>
 					<div class="col-sm-3 col-md-3 col-xs-3">
-						<input type="tel" class="form-control" name="amount" id="amount" placeholder="Amount" maxlength="20" required pattern="^([\+][0-9]{1,3}[\ \.\-])?([\(]{1}[0-9]{2,6}[\)])?([0-9\ \.\-\/]{3,20})((x|ext|extension)[\ ]?[0-9]{1,4})?$" <?php if($this->session->flashdata('phone')) echo "value = '".$this->session->flashdata('phone')."'"; ?>>
+						<input type="number" class="form-control" name="amount" id="amount" placeholder="Amount" maxlength="20" required <?php if($this->session->flashdata('phone')) echo "value = '".$this->session->flashdata('phone')."'"; ?>>
 					</div>
 				</div>
 			</div>
@@ -134,6 +140,5 @@
 				</div>
 			</div>
 		</form>
-		<br><br><br><br>
 	</div>
 </div>
