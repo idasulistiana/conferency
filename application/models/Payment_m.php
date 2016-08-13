@@ -77,5 +77,17 @@
 			$this->db->where($id, $x);
 			return $this->db->update($tbl,$data);
 		}
+		public function lihatPayment(){
+			$this->db->select('*')->from('tbl_pembayaran')->where('status', 0)->order_by('tgl', 'asc');
+			return $this->db->get()->result();
+		}
+		public function lihatPayment1(){
+			$this->db->select('*')->from('tbl_pembayaran')->where_not_in('status', 0)->order_by('tgl', 'desc');
+			return $this->db->get()->result();
+		}
+		public function hitung(){
+			$this->db->select('count(*) as jml')->from('tbl_pembayaran')->where('status', 0);
+			return $this->db->get()->row()->jml;
+		}
 	}
 ?>

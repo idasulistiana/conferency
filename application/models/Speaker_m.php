@@ -121,9 +121,9 @@
 			$this->db->select('*')->from('tbl_participant');
 			return $this->db->get()->result();
 		}
-		public function lihatPayment(){
-			$this->db->select('*')->from('tbl_pembayaran')->where('status', 0);
-			return $this->db->get()->result();
+		public function hitung($x = 'tbl_speaker'){
+			$this->db->select('count(*) as jml')->from($x)->where('status',2);
+			return $this->db->get()->row()->jml;	
 		}
 	}
 ?>

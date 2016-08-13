@@ -25,13 +25,13 @@
 		public function getCategory(){ return $this->category; }
 
 		public function lihat($x){
-			$this->db->select('*')->from('tbl_rundown')->where('date_ev', $x);
+			$this->db->select('*')->from('tbl_rundown')->where('date_ev', $x)->order_by('stime');
 			return $this->db->get()->result();
 		}
 		public function edit(){
 			$data = array(
-				'event' => $this->getEvent(),
-				'id_speaker' => $this->getIdSpeaker()
+				'event' => $this->getEvent()/*,
+				'id_speaker' => $this->getIdSpeaker()*/
 			);
 			$this->db->where('id_ev', $this->getId());
 			return $this->db->update('tbl_rundown', $data);
