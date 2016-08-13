@@ -2,8 +2,8 @@
       <div class="templatemo-content-wrapper">
         <div class="templatemo-content">
           <ol class="breadcrumb">
-            <li><a href="<?php echo site_url('admin_dashboard') ?>">Dashboard</a></li>
-            <li class="active">Data Presenter</li>
+            <li><a href="<?php echo site_url('admin_icbbogor') ?>">Dashboard</a></li>
+            <li class="active">Presenters</li>
           </ol>
           
           <div class="row">            

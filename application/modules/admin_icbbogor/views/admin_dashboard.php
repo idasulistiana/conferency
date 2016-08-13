@@ -3,7 +3,7 @@
       <div class="templatemo-content-wrapper">
         <div class="templatemo-content">
           <ol class="breadcrumb">
-            <li><a href="<?php echo site_url('admin_dashboard') ?>">Admin Panel</a></li>
+            <li><a href="<?php echo site_url('admin_icbb') ?>">Admin Panel</a></li>
           </ol>
           Wellcome
       <div class="clearfix"></div>
