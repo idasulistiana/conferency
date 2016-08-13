@@ -19,11 +19,11 @@
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
 				      <h4 class="panel-title">
-				        <a data-toggle="collapse" href="#collapse2">Committe</a>
+				        <a data-toggle="collapse" href="#collapse2">Committee</a>
 				      </h4>
 				    </div>
 				    <div id="collapse2" class="panel-collapse collapse">
-				      <div class="panel-body"><a href="<?php echo site_url() ?>About_us/organization">Organization</a></div>
+				      <div class="panel-body"><a href="<?php echo site_url() ?>about_us/organization">Organization</a></div>
 				    </div>
 				  </div>
 				<!-- </div> -->

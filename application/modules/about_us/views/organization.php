@@ -12,14 +12,14 @@
 				      </h4>
 				    </div>
 				    <div id="collapse1" class="panel-collapse collapse">
-				      <div class="panel-body"><a href="<?php echo site_url() ?>About_us#about">About SBRC</a></div>
-				      <div class="panel-footer"><a href="<?php echo site_url() ?>About_us#awards">Awards</a></div>
+				      <div class="panel-body"><a href="<?php echo site_url() ?>about_us#about">About SBRC</a></div>
+				      <div class="panel-footer"><a href="<?php echo site_url() ?>about_us#awards">Awards</a></div>
 				    </div>
 				  </div>
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
 				      <h4 class="panel-title">
-				        <a data-toggle="collapse" href="#collapse2">Conference</a>
+				        <a data-toggle="collapse" href="#collapse2">Committee</a>
 				      </h4>
 				    </div>
 				    <div id="collapse2" class="panel-collapse collapse">
