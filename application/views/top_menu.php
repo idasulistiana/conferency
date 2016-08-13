@@ -12,7 +12,7 @@
 
 <div id="header">
 	<div class="	header_body">
-		<?php if($this->session->userdata('status') == ""){ ?>
+		<?php //if($this->session->userdata('status') == ""){ ?>
 		<div class="clearfix"></div>
 		<div class="col-sm-12 ">
 				<!-- <div class="col-sm-8">
@@ -28,12 +28,11 @@
 <!-- 			<div class="col-sm-3 form-group">
 				<div class="search_input">
 					<input type="text" class="form-control" placeholder="search">
-				</div>
-			                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          -->
-			<?php }else echo '<br><br><div class="clearfix"></div>'; ?>
+				</div>                                                                                                                         -->
+			<?php //}else echo '<br><br><div class="clearfix"></div>'; ?>
 			<div class="clearfix"></div>
 			<ul class="line_top_menu">
-				<?php if($this->session->userdata('status') == ""){ ?>
+				<?php //if($this->session->userdata('status') == ""){ ?>
 				<li <?php if ($this->uri->segment(1)=='home' || $this->uri->segment(1)=='') echo 'class="active selected"'?>>
 					<a href="<?php echo site_url('home') ?>">Home</a>
 				</li>
@@ -71,22 +70,22 @@
 				</li>
 				<li <?php //if ($this->uri->segment(1)=='sponsor') echo 'class="active"'?>>
 					<a href="<?php echo site_url() ?>sponsor">Sponsor</a>
-				</li> -->
-				<?php }else{ if($this->session->userdata('status') == 2){ ?>
+				</li> 
+				<?php //}else{ if($this->session->userdata('status') == 2){ ?>
 				<li>
 					<a href="<?php echo site_url('Speaker/speaker_abstract') ?>">Abstract</a>
 				</li>
 				<li>
 					<a href="<?php echo site_url('Speaker/schedule') ?>">Your Schedule</a>
 				</li>
-				<?php } ?>
+				<?php //} ?>
 				<li>
 					<a href="<?php echo site_url('Speaker/rundown') ?>">Rundown</a>
 				</li>
 				<li>
 					<a href="<?php echo site_url('Speaker/logout') ?>">Logout</a>
 				</li>
-				<?php } ?>
+				<?php //} ?>-->
 			</ul>
 		</div>
 	</div>

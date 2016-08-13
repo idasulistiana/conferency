@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<?php $this->load->view('header'); ?>
-		
+		<title>International Conference on Biomass</title>
 	</head>
 	<body>
 		<?php $this->load->view('top_menu') ;?>
