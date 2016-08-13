@@ -34,34 +34,37 @@
 			<div class="clearfix"></div>
 			<ul class="line_top_menu">
 				<?php if($this->session->userdata('status') == ""){ ?>
-				<li <?php if ($this->uri->segment(1)=='Home' || $this->uri->segment(1)=='') echo 'class="active selected"'?>>
-					<a href="<?php echo site_url('Home') ?>">Home</a>
+				<li <?php if ($this->uri->segment(1)=='home' || $this->uri->segment(1)=='') echo 'class="active selected"'?>>
+					<a href="<?php echo site_url('home') ?>">Home</a>
 				</li>
-				<li <?php if ($this->uri->segment(1)=='About_us') echo 'class="active"'?>>
-					<a href="<?php echo site_url('About_us') ?>">About Us</a>
+				<li <?php if ($this->uri->segment(1)=='about_us') echo 'class="active"'?>>
+					<a href="<?php echo site_url('about_us') ?>">About Us</a>
 				</li>
-				<li <?php if ($this->uri->segment(1)=='Abstract_web') echo 'class="active"'?>>
-					<a href="<?php echo site_url('Abstract_web') ?>">Abstract</a>
+				<li <?php if ($this->uri->segment(1)=='abstract_web') echo 'class="active"'?>>
+					<a href="<?php echo site_url('abstract_web') ?>">Abstract</a>
 				</li>
-				<li class="<?php if ($this->uri->segment(1)=='Registration') echo ' active'?>">
-					<a  href="<?php echo site_url('Registration') ?>">Registration</a>
+				<li class="<?php if ($this->uri->segment(1)=='registration') echo ' active'?>">
+					<a  href="<?php echo site_url('registration') ?>">Registration</a>
 				</li>
 				<li <?php if ($this->uri->segment(1)=='technical_program') echo 'class="active"'?> class="dropdown">
 					<a  href="<?php echo site_url('technical_program') ?>" data-toggle="dropdown">Technical Program</a>
 						<ul class="dropdown-menu">
 							<li class="col-sm-12">
-								<a href="<?php echo site_url() ?>technical_program/">Call for Paper</a>
+								<a href="<?php echo site_url() ?>technical_program/call_paper">Call for Paper</a>
 							</li>
 							<li class="col-sm-12">
-								<a href="<?php echo site_url() ?>technical_program/participant"> Speaker Guidelines</a>
+								<a href="<?php echo site_url() ?>technical_program/speaker_guidelines"> Speaker Guidelines</a>
 							</li>
 							<li class="col-sm-12">
-								<a href="<?php echo site_url() ?>technical_program/participant"> Proceeding</a>
+								<a href="<?php echo site_url() ?>technical_program/proceeding"> Proceeding</a>
 							</li>
 						</ul>
 				</li>
 				<li <?php if ($this->uri->segment(1)=='venue_hospitally') echo 'class="active"'?>>
 					<a href="<?php echo site_url() ?>venue_hospitally">Venue & Hospitality</a>
+				</li>
+				<li <?php if ($this->uri->segment(1)=='payment') echo 'class="active"'?>>
+					<a href="<?php echo site_url() ?>payment">Payment Confirmation</a>
 				</li>
 	<!-- 			<li <?php //if ($this->uri->segment(1)=='awards') echo 'class="active"'?>>
 					<a href="<?php echo site_url() ?>awards">Awards</a>

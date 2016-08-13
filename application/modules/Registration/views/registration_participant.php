@@ -1,6 +1,6 @@
 <div id="body">
 	<div class="content">
-		<h2 align="center"><br>Registration for Participant</h2>
+		<h2 align="center"><br>Registration </h2>
 		<div style="margin:30px"> <b>
 		<h3>Payment</h3> 
 		<p>

@@ -130,15 +130,12 @@
 			<div class="sponsor">
 				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor1">
 			</div>
-		<!-- <div class="sponsore_title">Sponsored By:</div> -->
-<!-- 			<div class="sponsor">
-				<img src="<?php echo base_url();?>assets/images/Logo_ipb.png" alt="" class="img_sponsor">
+			    	
+	 	<!-- <h2><br>Registration </h2> -->
+	 	<div class="coorganize_title col-sm-12"> Supported By:</div>
+			
+		<div class="sponsor">
+				<img src="<?php echo base_url();?>assets/images/logo_bpdp.png" alt="" class="img_sponsor">
 			</div>
-			<div class="sponsor">
-				<img src="<?php echo base_url();?>assets/images/Logo_SBRC.png" alt="" class="img_sponsor">
-			</div>
-			<div class="sponsor">
-				<img src="<?php echo base_url();?>assets/images/ikabi_logo.jpg" alt="" class="img_sponsor">
-			</div> -->
 		</div>
 </div>	

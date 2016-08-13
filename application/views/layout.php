@@ -37,6 +37,12 @@
 					$this->load->view('organization');
 				}else if ($content_view=='confirm'){
 					$this->load->view('confirm');
+				}else if ($content_view=='call_paper'){
+					$this->load->view('call_paper');
+				}else if ($content_view=='speaker_guidelines'){
+					$this->load->view('speaker_guidelines');
+				}else if ($content_view=='proceeding'){
+					$this->load->view('proceeding');
 				}
 			?>
 			
